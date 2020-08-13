@@ -33,3 +33,27 @@ let style = () => {
         // 8. stream changes to all browsers
         .pipe(browserSync.stream());
 }
+
+let userref = () => {
+    return gulp.src('./src/*.html')
+        .pipe(fileinclude({
+            prefix: '@@',
+            basepath: '@file'
+        }))
+        .pipe(useref())
+        .pipe(gulpIf('*.js', terser()))
+        // 3. pass the file through css minifier
+        // .pipe(gulpIf('*.css', cssnano()))
+
+        .pipe(gulp.dest('dist'));
+}
+
+let imgminify = () => {
+    return gulp.src('src/img/**/*.+(png|jpg|jpeg|gif|svg)')
+        // Caching images that ran through imagemin
+        .pipe(cache(imagemin({
+            // Setting interlaced to true
+            interlaced: true
+        })))
+        .pipe(gulp.dest('dist/images'))
+}
