@@ -1,0 +1,13 @@
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const browserSync = require('browser-sync').create();
+const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
+const cssnano = require('gulp-cssnano');
+const gulpIf = require('gulp-if');
+// const uglify = require('gulp-uglify');
+const useref = require('gulp-useref');
+const fileinclude = require('gulp-file-include');
+const imagemin = require('gulp-imagemin');
+const cache = require('gulp-cache');
+const terser = require('gulp-terser');
