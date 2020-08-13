@@ -57,3 +57,25 @@ let imgminify = () => {
         })))
         .pipe(gulp.dest('dist/images'))
 }
+
+function watch() {
+    browserSync.init({
+        server: {
+            baseDir: './dist'
+        }
+    });
+    gulp.watch('./src/sass/**/*.scss', style);
+    gulp.watch('./src/sass/**/*.scss', userref);
+    gulp.watch('./src/*.html', userref);
+    gulp.watch('./src/js/**/*.js', userref);
+    gulp.watch('./src/includes/*.html', userref);
+    gulp.watch('./**/*.html').on('change', browserSync.reload);
+    gulp.watch('./src/js/**/*.js').on('change', browserSync.reload);
+
+}
+
+exports.style = style;
+exports.watch = watch;
+exports.userref = userref;
+exports.imgminify = imgminify;
+// exports.fileincludes = fileincludes;
