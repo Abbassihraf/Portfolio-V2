@@ -91,11 +91,8 @@ Scroll
 ===============
 */
 /* navbar */
-header{
-    background-color: red;
-}
+
 nav {
-  background: var(--clr-white);
   padding: 1rem 1.5rem;
 }
 /* fixed nav */
@@ -104,11 +101,11 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--clr-white);
-  box-shadow: var(--light-shadow);
+  background: white;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 .fixed-nav .links a {
-  color: var(--clr-grey-1);
+  color: black;
 }
 .fixed-nav .links a:hover {
   color: var(--clr-secondary);
@@ -123,14 +120,14 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: var(--clr-grey-1);
+  color: red;
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: var(--clr-secondary);
+  color: green;
 }
 .logo {
   height: 50px;
@@ -183,7 +180,7 @@ nav {
   }
   .links a {
     background: transparent;
-    color: var(--clr-white);
+    color: black;
     font-size: 1.1rem;
     text-transform: capitalize;
     letter-spacing: var(--spacing);
@@ -197,7 +194,9 @@ nav {
     color: var(--clr-white);
   }
 }
-
+.section{
+  margin-top: 2000px;
+}
 .top-link {
   font-size: 1.25rem;
   position: fixed;
