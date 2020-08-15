@@ -1066,10 +1066,11 @@
     }
 }
 @media (min-width: 320px) and (max-width: 599px){
-    .aboutMe{
-        // padding: 0rem 16rem;
+    .A-s-s{
         background-color: #1F2235;
         padding-bottom: 40px;
+    }
+    .aboutMe{
         &__list{
             display: grid;
             grid-template-columns: 100%;
