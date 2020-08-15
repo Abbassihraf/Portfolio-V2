@@ -1332,7 +1332,44 @@
     }
 }
 
-
+@media (min-width: 320px) and (max-width: 599px){
+    .service{
+        padding-bottom: 40px;
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content;
+            background-color: #313552;
+            padding: 80px 24px 56px;
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__card1,&__card2,&__card3{
+            margin-bottom: 48px;
+            img{
+                margin: auto auto 24px;
+                display: block;
+            }
+            h1{
+                color: white;
+                font-family: $fontS;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+            p{
+                color: white;
+                text-align: justify;
+                text-align-last: center;
+                font-size: 20px;
+                font-weight: 400;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
 
 
 //****** SERVICE SECTION END ******//
