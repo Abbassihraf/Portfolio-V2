@@ -1302,6 +1302,7 @@
     .service{
         background-color: #1F2235;
         padding-bottom: 40px;
+        display: none;
         &__wrapper{
             display: grid;
             grid-template-columns: 33.3% 33.3% 33.3%;
@@ -1309,7 +1310,7 @@
             background-color: #313552;
             padding: 80px 24px;
         }
-        &__card1,&__card2,&__card3{
+        &__card{
             img{
                 margin: auto auto 32px;
                 display: block;
@@ -1336,6 +1337,7 @@
 @media (min-width: 320px) and (max-width: 599px){
     .service{
         padding-bottom: 40px;
+        display: none;
         &__wrapper{
             display: grid;
             grid-template-columns: 100%;
@@ -1346,7 +1348,7 @@
             margin-left: auto;
             margin-right: auto;
         }
-        &__card1,&__card2,&__card3{
+        &__card{
             margin-bottom: 48px;
             img{
                 margin: auto auto 24px;
@@ -1375,6 +1377,7 @@
 @media (min-width: 600px) and (max-width: 1199px){
     .service{
         padding-bottom: 40px;
+        display: none;
         &__wrapper{
             display: grid;
             grid-template-columns: 100%;
@@ -1385,7 +1388,7 @@
             margin-left: auto;
             margin-right: auto;
         }
-        &__card1,&__card2,&__card3{
+        &__card{
             margin-bottom: 48px;
             img{
                 margin: auto auto 24px;
@@ -1413,4 +1416,40 @@
 
 
 //****** SERVICE SECTION END ******//
+//*********************************//
+
+
+//*****************************//
+//****** SKILLS SECTION ******//
+
+@media (min-width: 1200px){
+    .skills{
+        background-color: #1F2235;
+        padding-bottom: 40px;
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: max-content max-content;
+            background-color: #313552;
+            padding: 80px 24px 40px;
+        }
+        &__card{
+            margin-bottom: 24px;
+            img{
+                margin: auto auto 24px;
+                display: block;
+                width: 96px;
+            }
+            h1{
+                color: white;
+                font-family: $fontS;
+                text-align: center;
+                margin-bottom: 56px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+//****** SKILLS SECTION END ******//
 //*********************************//
