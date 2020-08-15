@@ -544,6 +544,7 @@
         top: 40%;
         left: 5%;
         width: 1,5%;
+        display: none;
 
     }
     
@@ -1068,6 +1069,116 @@
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: max-content max-content max-content;
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__aboutBtn,&__serviceBtn,&__skillsBtn{
+            padding: 16px;
+            text-transform: uppercase;
+            font-size: 20px;
+            color: #CACBD2;
+            border: 1px solid #CACBD2;
+            background-color: #2A2C47;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        &__aboutBtn:hover,&__serviceBtn:hover,&__skillsBtn:hover{
+            border: 1px solid $primary;
+            background-color: $primary;
+            color: #2A2C47;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content;
+            background-color: #313552;
+            padding: 80px 24px 56px;
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            &--left{
+                margin: auto auto 32px ;
+                img{
+                    display: block;
+                    margin:auto;
+                    width: 96%;
+                }
+            }
+            &--right{
+                h1{
+                    color: $primary;
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    margin-bottom: 24px;
+                }
+                h2{
+                    color: white;
+                    font-size: 40px;
+                    font-family: $fontS;
+                    width: 88%;
+                    line-height: 3.2rem;
+                    margin-bottom: 24px;
+                }
+                h3,h5{
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 400;
+                    width: 96%;
+                    line-height: 1.6em;
+                    text-align: justify;
+                }
+                .youcode{
+                    background-color: #0176F6;
+                    color: white;
+                }
+                h4{
+                    margin-top: 16px;
+                    margin-bottom: 16px;
+                    color: white;
+                    font-size: 16px;
+                }
+                h6{
+                    margin-top: 16px;
+                    margin-bottom: 40px;
+                    color: white;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    .activeBtn{
+        border: 1px solid $primary;
+        background-color: $primary;
+        color: #2A2C47;
+    }
+    .Download--cv{
+        padding: 16px 32px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #2A2C47;
+        border: 1px solid $primary;
+        background-color: $primary;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .Download--cv:hover{
+        color: $primary;
+        border: 1px solid $primary;
+        background-color:  transparent;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px){
+    .aboutMe{
+        // padding: 0rem 16rem;
+        background-color: #1F2235;
+        padding-bottom: 40px;
+        &__list{
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: max-content;
             width: 88%;
             margin-left: auto;
             margin-right: auto;
