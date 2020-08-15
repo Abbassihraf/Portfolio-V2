@@ -968,7 +968,6 @@
     }
     .aboutMe{
         padding-bottom: 40px;
-        display: none;
         &__list{
             display: grid;
             grid-template-columns: 33.3% 33.3% 33.3%;
@@ -1072,7 +1071,6 @@
     }
     .aboutMe{
         padding-bottom: 40px;
-        display: none;
         &__list{
             display: grid;
             grid-template-columns: 100%;
@@ -1185,7 +1183,6 @@
     }
     .aboutMe{
         padding-bottom: 40px;
-        display: none;
         &__list{
             display: grid;
             grid-template-columns: 33.3% 33.3% 33.3%;
@@ -1426,6 +1423,7 @@
     .skills{
         background-color: #1F2235;
         padding-bottom: 40px;
+        display: none;
         &__wrapper{
             display: grid;
             grid-template-columns: 33.3% 33.3% 33.3%;
@@ -1454,6 +1452,7 @@
 @media (min-width: 320px) and (max-width: 599px){
     .skills{
         padding-bottom: 40px;
+        display: none;
         &__wrapper{
             display: grid;
             grid-template-columns: 50% 50%;
@@ -1487,6 +1486,7 @@
 @media (min-width: 600px) and (max-width: 1199px){
     .skills{
         padding-bottom: 40px;
+        display: none;
         &__wrapper{
             display: grid;
             grid-template-columns: 50% 50%;
