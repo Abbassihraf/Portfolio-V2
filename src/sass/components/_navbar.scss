@@ -157,10 +157,11 @@ nav {
 @media screen and (min-width: 800px) {
   nav {
     background: transparent;
+    max-width: 1024px;
+    max-width: 96%;
   }
   .nav-center {
-    width: 90vw;
-    max-width: 1170px;
+
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -180,9 +181,9 @@ nav {
   }
   .links a {
     background: transparent;
-    color: black;
+    color: white;
     font-size: 1.1rem;
-    text-transform: capitalize;
+    text-transform: uppercase;
     letter-spacing: var(--spacing);
     display: block;
     transition: var(--transition);
