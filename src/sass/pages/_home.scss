@@ -955,18 +955,24 @@
 }
 
 //****** HEADER END ******//
+//************************//
 
-//****** About ME SECTION ******//
+
+//******************************//
+//****** ABOUT ME SECTION ******//
 
 @media (min-width: 1200px){
-    .aboutMe{
+    .A-s-s{
         padding: 0rem 16rem;
         background-color: #1F2235;
         padding-bottom: 40px;
+    }
+    .aboutMe{
         &__list{
             display: grid;
             grid-template-columns: 33.3% 33.3% 33.3%;
             grid-template-rows: max-content;
+            background-color: #1F2235;
         }
         &__aboutBtn,&__serviceBtn,&__skillsBtn{
             padding: 24px;
@@ -1059,7 +1065,6 @@
         background-color:  transparent;
     }
 }
-
 @media (min-width: 320px) and (max-width: 599px){
     .aboutMe{
         // padding: 0rem 16rem;
@@ -1072,6 +1077,7 @@
             width: 88%;
             margin-left: auto;
             margin-right: auto;
+            background-color: red;
         }
         &__aboutBtn,&__serviceBtn,&__skillsBtn{
             padding: 16px;
@@ -1280,4 +1286,28 @@
     }
 }
 
-//****** About ME SECTION END ******//
+//****** ABOUT ME SECTION END ******//
+//***********************************/
+
+
+//*****************************//
+//****** SERVICE SECTION ******//
+
+// @media (min-width: 1200px){
+    .service{
+        padding: 0rem 16rem;
+        background-color: #1F2235;
+        padding-bottom: 40px;
+        display: none;
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: max-content;
+            background-color: #313552;
+            padding: 80px 24px;
+        }
+    }
+
+
+//****** SERVICE SECTION END ******//
+//*********************************//
