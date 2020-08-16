@@ -7,6 +7,10 @@
         <!-- <link rel="icon" type="image/png" href="images/icon-onglet.png" /> -->
 
         <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
         <!-- Fonts -->
         <link
@@ -172,7 +176,13 @@
     <div class="testimonials__container">
     <h1 class="testimonials__title">testimonials</h1>
     <h3 class="testimonials__subtitle">happy partners say</h3>
-        <div class="testimonials__wrapper">
+        <div class="testimonials__wrapper thm__owl-carousel testimonials__carousel owl-carousel owl-theme" data-options='{ 
+            "items": 2, "smartSpeed": 700, "autoplayTimeout": 5000, "loop": true, "nav": false, "dots": true,  "responsive": {
+                "0": {"items": 1, "margin": 0},
+                "767": {"items": 1, "margin": 0},
+                "991": {"items": 2, "margin": 30},
+                "1199": {"items": 2}
+            } }'>
             <div class="testimonials__card">
                 <div class="testimonials__card--top">
                     <img class="testimonials__avatar" src="/images/avatar1.png" alt="">
