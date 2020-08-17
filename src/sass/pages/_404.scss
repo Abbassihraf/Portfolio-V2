@@ -1,3 +1,5 @@
+@media (min-width: 1200px){
+
 .error{
     background-image: url("../images/error-bg.png");
     height: 1008px;
@@ -58,5 +60,82 @@
         grid-area: 1/2;
         margin: auto;
         display: block;
+    }
+}
+}
+
+
+@media (min-width: 320px) and (max-width: 599px){
+
+    .error{
+        background-image: url("../images/error-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        &__container{
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20% 0px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content;
+        }
+        &__left{
+            grid-area: 1/1;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 64px;
+            h1{
+                font-family: $fontS;
+                color: white;
+                font-size: 96px;
+                text-transform: capitalize;
+                text-align: center;
+            }
+            h2{
+                color: white;
+                font-family: $fontS;
+                text-transform: capitalize;
+                text-align: center;
+                font-size: 32px;
+                width: 72%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 40px;
+            }
+            a{
+                display: block;
+                padding: 16px 24px;
+                background-color: $primary;
+                border: 1px solid $primary;
+                border-radius: 8px;
+                text-transform: uppercase;
+                text-align-last: center;
+                font-weight: 700;
+                color: #1F2235;
+                margin-left: auto;
+                margin-right: auto;
+                width: 48%;
+                transition: 0.8s;
+            }
+            a:hover{
+                border: 1px solid $primary;
+                color: $primary;
+                background-color: transparent;
+            }
+        }
+        &__right{
+            grid-area: 2/1;
+            margin: auto;
+            display: block;
+            img{
+                display: block;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
     }
 }
