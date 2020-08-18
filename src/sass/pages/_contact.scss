@@ -105,3 +105,132 @@
         }
     }
 }
+
+@media (min-width: 320px) and (max-width: 599px){
+    .contact-header{
+        background-image: url(../images/contact-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: 64px;
+
+        &__title{
+            font-size: 40px;
+            font-family: $fontS;
+            color: white;
+            margin-bottom: 16px;
+        }
+        &__subtitle{
+            width: 80%;
+            color: white;
+            font-weight: 400;
+            font-size: 16px;
+        }
+        &__container{
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+    
+    .contact{
+        background-color: #1F2235;
+        &__title{
+            color: $primary;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        &__subtitle{
+        color: white;
+        font-size: 40px;
+        font-family: $fontS;
+        text-transform: capitalize;
+        }
+        &__para{
+            color: white;
+            margin-top: 24px;
+            font-weight: lighter;
+            font-size: 18px;
+        }
+        &__container{
+            background-color: #313552;
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 32px 16px;
+        }
+        form{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content max-content max-content max-content max-content;
+            margin-top: 40px;
+            input, textarea{
+                border: 1px solid white;
+                background-color: transparent;
+                width: 96%;
+                border-radius: 6px;
+                color: white;
+            }
+            input{
+                padding: 24px 16px;
+                font-size: 16px;
+            }
+            #fname{
+                grid-area: 1/1;
+                margin-bottom: 24px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #subject{
+                grid-area: 2/1;
+                margin-bottom: 24px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #email{
+                grid-area: 3/1;
+                margin-bottom: 24px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #phone{
+                grid-area: 4/1;
+                margin-bottom: 24px;
+                margin-left: auto;
+                margin-right: auto;
+
+            }
+            #message{
+                grid-area: 5/1;
+                margin-bottom: 24px;
+                padding: 24px 16px;
+                font-size: 16px;
+                height: 184px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            #send{
+                grid-area: 6/1;
+                width: 40%;
+                text-transform: uppercase;
+                color: $primary;
+                border: 1px solid $primary;
+                cursor: pointer;
+                font-size: 18px;
+                transition: 0.6s;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 16px !important;
+
+            }
+            #send:hover{
+                border: 1px solid $primary;
+                background-color: $primary;
+                color:#313552;
+                font-weight: 700;
+
+            }
+        }
+    }
+}
