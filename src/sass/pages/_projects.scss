@@ -80,3 +80,89 @@
     }
 }
 }
+
+@media (min-width: 320px) and (max-width: 599px){
+    .projects-page{
+        background-color: #1F2235;
+        &__title{
+            color: $primary;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        &__subtitle{
+        color: white;
+        font-size: 40px;
+        font-family: $fontS;
+        text-transform: capitalize;
+        }
+        &__container{
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 100%;
+            margin-top: 56px;
+            padding-bottom: 56px;
+    
+        }
+        &__card{
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 48px;
+                img{
+                    display: block;
+                    width: 320px;
+                    height: 320px;
+                    border-radius: 16px;
+                }
+            &--bottom{
+                padding: 40px 24px;
+                background-color: #313552;
+                border-radius: 16px 16px 0px 0px;
+                width: 320px;
+                h1{
+                    color: white;
+                    font-family: $fontS;
+                    text-transform: capitalize;
+                    font-size: 32px;
+                    margin-bottom: 24px;
+                }
+                h2{
+                    color: $primary;
+                    font-weight: 400;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+        &__github{
+            color: white;
+            font-size: 16px;
+            display: block;
+            margin-bottom: 40px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        &__github:hover{
+            color: $primary;
+        }
+        &__website{
+            cursor: pointer;
+            color: $primary;
+            background-color: transparent;
+            border: 1px solid $primary;
+            padding: 16px 32px;
+            text-transform: uppercase;
+            transition: 0.5s;
+        }
+        &__website:hover{
+            border: 1px solid $primary;
+            background-color: $primary;
+            color: #313552 ;
+            // font-weight: 700;
+        }
+    }
+}

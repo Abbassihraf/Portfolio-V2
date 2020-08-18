@@ -1649,21 +1649,21 @@
                     color: white;
                     font-family: $fontS;
                     text-transform: capitalize;
-                    font-size: 40px;
-                    width: 80%;
+                    font-size: 32px;
                     margin-bottom: 24px;
                 }
                 h2{
                     color: $primary;
                     font-weight: 400;
+                    margin-bottom: 16px;
                 }
             }
         }
         &__github{
             color: white;
-            font-size: 20px;
+            font-size: 16px;
             display: block;
-            margin-bottom: 32px;
+            margin-bottom: 40px;
             cursor: pointer;
             transition: 0.5s;
         }
