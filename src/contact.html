@@ -1,6 +1,30 @@
 @@include('includes/head.html')
 
+<header class="contact-header">
 @@include('includes/navbar.html')
+
+<h1 class="contact-header__title">Get a contact</h1>
+<h2 class="contact-header__subtitle">Fill out this simple form. we will contact you promptly to discuss
+        next steps.</h2>
+</header>
+
+<section class="contact">
+    <div class="contact__container">
+            <h1 class="contact__title">contact me</h1>
+            <h3 class="contact__subtitle">let's chat</h3>
+            <h4 class="contact__para">Fill this out so we can learn more about your needs.</h4>
+
+            <form action="">
+                <input type="text" id="fname" name="fullname" placeholder="Full name" required>
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <input type="email" id="email" name="email" placeholder="Email Address" required>
+                <input type="tel" id="phone" name="phone" placeholder="Phone number">
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+                <input id="send" type="submit" value="send">
+
+            </form>
+    </div>
+</section>
 
 
 @@include('includes/testimonials.html')
