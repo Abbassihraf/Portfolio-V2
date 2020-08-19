@@ -103,6 +103,69 @@
 
             }
         }
+        &__informations{
+            display: grid;
+            grid-template-columns: 33.33% 33.33% 33.33%;
+            grid-template-rows: max-content;
+            padding: 40px 0px;
+            &--card{
+                display: grid;
+                grid-template-columns: max-content max-content;
+                grid-template-rows: max-content max-content;
+                margin-left: auto;
+                margin-right: auto;
+                transition: 0.8s;
+                i{
+                    color: white;
+                    font-size: 48px;
+                    grid-row: 1/2;
+                    grid-column: 1/2;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                h1{
+                    color: $primary;
+                    margin-bottom: auto;
+                    margin-top: auto;
+                    text-transform: capitalize;
+                    margin-left: 24px;
+
+                }
+                .emailA{
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                    margin-left: 24px;
+                    display: block;
+                    color: white;
+                    margin-bottom: 8px;
+                }
+                .emailB{
+                    grid-column: 2/3;
+                    grid-row: 3/4;
+                    margin-left: 24px;
+                    display: block;
+                    color: white;
+                }
+                a, p{
+                    grid-column: 2/3;
+                    grid-row: 2/3;
+                    margin-left: 24px;
+                    display: block;
+                    color: white;
+                    font-size: 18px;
+                    transition: 1s;
+                }
+                a:hover{
+                    color: $primary;
+                }
+                    
+            }
+            &--card:hover{
+                i{
+                    color: $primary;
+                }
+            }
+        }
     }
 }
 
