@@ -1,6 +1,7 @@
 @media (min-width: 1200px){
     .social-media{
         padding: 4rem 16rem;
+        padding-bottom: 80px;
         background-color: #1F2235;
         &__title{
                 color: $primary;
@@ -19,8 +20,7 @@
             display: grid;
             grid-template-columns: 33.3% 33.3% 33.3%;
             grid-template-rows: max-content;
-            margin-top: 40px;
-            padding: 0px 0px 40px;
+            margin-top: 56px;
         }
         &__card{
             display: grid;
