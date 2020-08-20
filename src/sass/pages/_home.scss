@@ -965,6 +965,7 @@
     .A-s-s{
         padding: 0rem 16rem;
         background-color: #1F2235;
+        padding-bottom: 120px;
     }
     .aboutMe{
         padding-bottom: 40px;
@@ -1541,6 +1542,27 @@
     font-size: 40px;
     font-family: $fontS;
     text-transform: capitalize;
+    }
+    &__more{
+        display: block;
+        padding: 16px 32px;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-align: center;
+        color: $primary;
+        border: 1px solid $primary;
+        background-color: transparent;
+        cursor: pointer;
+        transition: 0.5s;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10%;
+    }
+    &__more:hover{
+        color: #2A2C47;
+        border: 1px solid $primary;
+        background-color:  $primary;
     }
     &__wrapper{
         margin-top: 40px;
