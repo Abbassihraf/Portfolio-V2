@@ -100,14 +100,16 @@ nav {
   top: 0;
   left: 0;
   width: 100%;
-  background: white;
+  background: #313552;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  z-index: 111;
+  padding: 0.8rem 16rem;
 }
 .fixed-nav .links a {
-  color: black;
+  color: white;
 }
 .fixed-nav .links a:hover {
-  color: var(--clr-secondary);
+  color: $primary;
 }
 /* .fixed-nav .links-container {
   height: auto !important;
@@ -119,14 +121,14 @@ nav {
 }
 .nav-toggle {
   font-size: 1.5rem;
-  color: red;
+  color: $primary;
   background: transparent;
   border-color: transparent;
   transition: var(--transition);
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: green;
+  color: $primary;
 }
 .logo {
   height: 50px;
@@ -156,8 +158,7 @@ nav {
 @media screen and (min-width: 1200px) {
   nav {
     background: transparent;
-    max-width: 1024px;
-    max-width: 96%;
+    max-width: 100%;
   }
   .nav-center {
 
@@ -191,7 +192,7 @@ nav {
     padding: 0;
   }
   .links a:hover {
-    color: var(--clr-white);
+    color: $primary;
   }
 }
 .section{
@@ -217,6 +218,52 @@ nav {
 .show-link {
   visibility: visible;
   z-index: 100;
+}
+
+@media (min-width: 0px) and (max-width: 1199px){
+  .fixed-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #313552;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    z-index: 111;
+    padding: 1rem 1.5rem;
+  }
+  .fixed-nav .links a {
+    color: white;
+    background: #313552;
+  }
+  .links-container{
+    text-align: center;
+  }
+  nav{
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 0rem;
+  }
+  .nav-header{
+    img{
+      width: 16%;
+    }
+  }
+
+  .links a {
+    background: #313552;
+    color: white;
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    transition: var(--transition);
+    font-weight: bold;
+    padding: 0.75rem 0;
+  }
+  .links a:hover{
+    color: $primary;
+  }
 }
 
 

@@ -6,7 +6,7 @@
 .header{
     background-image: url(../images/bg-header.png);
     background-repeat: no-repeat;
-    padding: 4rem 16rem;
+    padding: 4rem 16rem 0rem;
 
     &__wrapper{
         display: grid;
@@ -19,7 +19,7 @@
         &--left{
             grid-area: 1/1;
             margin: 32px auto auto 0px;
-            z-index: 111;
+            z-index: 1;
             h3{
                 font-size: 56px;
                 color: $primary;
@@ -47,7 +47,7 @@
         }
         &--right{
             grid-area: 1/2;
-            z-index: 111;
+            z-index: 1;
             img{
                 display: block;
                 margin-left: auto;
@@ -276,7 +276,7 @@
             &--left{
                 grid-area: 1/1;
                 margin: 32px auto 40px 0px;
-                z-index: 111;
+                z-index: 1;
                 h3{
                     font-size: 48px;
                     color: $primary;
@@ -303,7 +303,7 @@
             }
             &--right{
                 grid-area: 2/1;
-                z-index: 111;
+                z-index: 1;
                 img{
                     display: block;
                     margin-left: auto;
@@ -452,7 +452,7 @@
             &--left{
                 grid-area: 1/1;
                 margin: 32px auto auto 0px;
-                z-index: 111;
+                z-index: 1;
                 h3{
                     font-size: 32px;
                     color: $primary;
@@ -479,7 +479,7 @@
             }
             &--right{
                 grid-area: 1/2;
-                z-index: 111;
+                z-index: 1;
                 img{
                     display: block;
                     margin-left: auto;
@@ -714,7 +714,7 @@
             &--left{
                 grid-area: 1/1;
                 margin: 32px auto auto 0px;
-                z-index: 111;
+                z-index: 1;
                 h3{
                     font-size: 48px;
                     color: $primary;
@@ -741,7 +741,7 @@
             }
             &--right{
                 grid-area: 1/2;
-                z-index: 111;
+                z-index: 1;
                 img{
                     display: block;
                     margin-left: auto;
