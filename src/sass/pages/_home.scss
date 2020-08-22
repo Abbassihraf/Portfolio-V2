@@ -962,10 +962,26 @@
 //****** ABOUT ME SECTION ******//
 
 @media (min-width: 1200px){
+    .img9,.img10,.img11{
+        position: absolute;
+    
+    }
+    .img9{
+        top: 149%;
+        left: 9%;
+    }
+    .img10{
+        top: 100%;
+        left: 85%;
+    }
+    .img11{
+        top: 130%;
+        left: 84%;
+    }
     .A-s-s{
         padding: 0rem 16rem;
         background-color: #1F2235;
-        padding-bottom: 120px;
+        padding-bottom: 80px;
     }
     .aboutMe{
         padding-bottom: 40px;
@@ -1069,9 +1085,10 @@
 @media (min-width: 320px) and (max-width: 599px){
     .A-s-s{
         background-color: #1F2235;
+        padding-bottom: 80px;
     }
     .aboutMe{
-        padding-bottom: 40px;
+
         &__list{
             display: grid;
             grid-template-columns: 100%;
@@ -1181,9 +1198,9 @@
 @media (min-width: 600px) and (max-width: 1199px){
     .A-s-s{
         background-color: #1F2235;
+        padding-bottom: 80px;
     }
     .aboutMe{
-        padding-bottom: 40px;
         &__list{
             display: grid;
             grid-template-columns: 33.3% 33.3% 33.3%;
@@ -1334,7 +1351,6 @@
 
 @media (min-width: 320px) and (max-width: 599px){
     .service{
-        padding-bottom: 40px;
         display: none;
         &__wrapper{
             display: grid;
@@ -1374,7 +1390,6 @@
 
 @media (min-width: 600px) and (max-width: 1199px){
     .service{
-        padding-bottom: 40px;
         display: none;
         &__wrapper{
             display: grid;
@@ -1452,7 +1467,6 @@
 
 @media (min-width: 320px) and (max-width: 599px){
     .skills{
-        padding-bottom: 40px;
         display: none;
         &__wrapper{
             display: grid;
@@ -1486,7 +1500,6 @@
 
 @media (min-width: 600px) and (max-width: 1199px){
     .skills{
-        padding-bottom: 40px;
         display: none;
         &__wrapper{
             display: grid;
