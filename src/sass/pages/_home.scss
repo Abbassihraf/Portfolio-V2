@@ -1085,7 +1085,7 @@
 @media (min-width: 320px) and (max-width: 599px){
     .A-s-s{
         background-color: #1F2235;
-        padding-bottom: 80px;
+        padding-bottom: 64px;
     }
     .aboutMe{
 
@@ -1543,6 +1543,7 @@
 .projects{
     padding: 0rem 16rem;
     background-color: #1F2235;
+    padding-bottom: 80px;
     &__title{
         color: $primary;
         font-size: 16px;
@@ -1579,7 +1580,7 @@
     }
     &__wrapper{
         margin-top: 56px;
-        margin-bottom: 56px;
+        margin-bottom: 32px;
         display: grid;
         grid-template-columns: 33.3% 33.3% 33.3%;
         grid-template-rows: max-content;
@@ -1644,6 +1645,7 @@
 @media (min-width: 320px) and (max-width: 599px){
     .projects{
         background-color: #1F2235;
+        padding-bottom: 64px;
         &__container{
             width: 88%;
             margin-left: auto;
@@ -1662,8 +1664,30 @@
         font-family: $fontS;
         text-transform: capitalize;
         }
+        &__more{
+            display: block;
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            color: $primary;
+            border: 1px solid $primary;
+            background-color: transparent;
+            cursor: pointer;
+            transition: 0.5s;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+        }
+        &__more:hover{
+            color: #2A2C47;
+            border: 1px solid $primary;
+            background-color:  $primary;
+        }
         &__wrapper{
             margin-top: 40px;
+            margin-bottom: 16px;
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: max-content;
