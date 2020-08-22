@@ -69,6 +69,8 @@
 
 @media (min-width: 320px) and (max-width: 599px){
     .social-media{
+        padding-top: 40px;
+        padding-bottom: 64px;
         background-color: #1F2235;
         &__title{
                 color: $primary;
@@ -93,7 +95,6 @@
             grid-template-columns: 100%;
             grid-template-rows: max-content max-content max-content;
             margin-top: 40px;
-            padding: 0px 0px 40px;
         }
         &__card{
             display: grid;
@@ -143,6 +144,8 @@
 @media (min-width: 600px) and (max-width: 1023px){
     .social-media{
         background-color: #1F2235;
+        padding-top: 40px;
+        padding-bottom: 64px;
         &__title{
                 color: $primary;
                 font-size: 16px;
@@ -166,7 +169,6 @@
             grid-template-columns: 100%;
             grid-template-rows: max-content max-content max-content;
             margin-top: 40px;
-            padding: 0px 0px 40px;
         }
         &__card{
             display: grid;
@@ -216,6 +218,8 @@
 @media (min-width: 1024px) and (max-width: 1199px){
     .social-media{
         background-color: #1F2235;
+        padding-top: 40px;
+        padding-bottom: 64px;
         &__title{
                 color: $primary;
                 font-size: 16px;
@@ -239,7 +243,6 @@
             grid-template-columns: 33.3% 33.3% 33.3%;
             grid-template-rows: max-content;
             margin-top: 40px;
-            padding: 0px 0px 40px;
         }
         &__card{
             display: grid;

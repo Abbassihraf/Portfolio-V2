@@ -1083,6 +1083,10 @@
     }
 }
 @media (min-width: 320px) and (max-width: 599px){
+    .img9,.img10,.img11{
+        display: none;
+    
+    }
     .A-s-s{
         background-color: #1F2235;
         padding-bottom: 64px;
@@ -1196,6 +1200,10 @@
 }
 
 @media (min-width: 600px) and (max-width: 1199px){
+    .img9,.img10,.img11{
+        display: none;
+    
+    }
     .A-s-s{
         background-color: #1F2235;
         padding-bottom: 64px;
