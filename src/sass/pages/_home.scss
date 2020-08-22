@@ -1198,7 +1198,7 @@
 @media (min-width: 600px) and (max-width: 1199px){
     .A-s-s{
         background-color: #1F2235;
-        padding-bottom: 80px;
+        padding-bottom: 64px;
     }
     .aboutMe{
         &__list{
@@ -1752,6 +1752,7 @@
 @media (min-width: 600px) and (max-width: 1199px){
     .projects{
         background-color: #1F2235;
+        padding-bottom: 64px;
         &__container{
             width: 88%;
             margin-left: auto;
@@ -1769,6 +1770,27 @@
         font-size: 40px;
         font-family: $fontS;
         text-transform: capitalize;
+        }
+        &__more{
+            display: block;
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            color: $primary;
+            border: 1px solid $primary;
+            background-color: transparent;
+            cursor: pointer;
+            transition: 0.5s;
+            margin-left: auto;
+            margin-right: auto;
+            width: 24%;
+        }
+        &__more:hover{
+            color: #2A2C47;
+            border: 1px solid $primary;
+            background-color:  $primary;
         }
         &__wrapper{
             margin-top: 40px;
