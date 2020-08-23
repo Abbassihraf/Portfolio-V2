@@ -991,21 +991,6 @@
             grid-template-rows: max-content;
             background-color: #1F2235;
         }
-        &__aboutBtn,&__serviceBtn,&__skillsBtn{
-            padding: 24px;
-            text-transform: uppercase;
-            font-size: 24px;
-            color: #CACBD2;
-            border: 1px solid #CACBD2;
-            background-color: #2A2C47;
-            cursor: pointer;
-            transition: 0.5s;
-        }
-        &__aboutBtn:hover,&__serviceBtn:hover,&__skillsBtn:hover{
-            border: 1px solid $primary;
-            background-color: $primary;
-            color: #2A2C47;
-        }
         &__wrapper{
             display: grid;
             grid-template-columns: 50% 50%;
@@ -1066,21 +1051,6 @@
         background-color: $primary;
         color: #2A2C47;
     }
-    .Download--cv{
-        padding: 16px 32px;
-        font-size: 16px;
-        font-weight: 600;
-        color: #2A2C47;
-        border: 1px solid $primary;
-        background-color: $primary;
-        cursor: pointer;
-        transition: 0.5s;
-    }
-    .Download--cv:hover{
-        color: $primary;
-        border: 1px solid $primary;
-        background-color:  transparent;
-    }
 }
 @media (min-width: 320px) and (max-width: 599px){
     .img9,.img10,.img11{
@@ -1102,21 +1072,6 @@
             margin-right: auto;
             background-color: red;
         }
-        &__aboutBtn,&__serviceBtn,&__skillsBtn{
-            padding: 16px;
-            text-transform: uppercase;
-            font-size: 20px;
-            color: #CACBD2;
-            border: 1px solid #CACBD2;
-            background-color: #2A2C47;
-            cursor: pointer;
-            transition: 0.5s;
-        }
-        &__aboutBtn:hover,&__serviceBtn:hover,&__skillsBtn:hover{
-            border: 1px solid $primary;
-            background-color: $primary;
-            color: #2A2C47;
-        }
         &__wrapper{
             display: grid;
             grid-template-columns: 100%;
@@ -1182,21 +1137,7 @@
         background-color: $primary;
         color: #2A2C47;
     }
-    .Download--cv{
-        padding: 16px 32px;
-        font-size: 16px;
-        font-weight: 600;
-        color: #2A2C47;
-        border: 1px solid $primary;
-        background-color: $primary;
-        cursor: pointer;
-        transition: 0.5s;
-    }
-    .Download--cv:hover{
-        color: $primary;
-        border: 1px solid $primary;
-        background-color:  transparent;
-    }
+
 }
 
 @media (min-width: 600px) and (max-width: 1199px){
@@ -1217,21 +1158,6 @@
             margin-left: auto;
             margin-right: auto;
         }
-        &__aboutBtn,&__serviceBtn,&__skillsBtn{
-            padding: 16px;
-            text-transform: uppercase;
-            font-size: 20px;
-            color: #CACBD2;
-            border: 1px solid #CACBD2;
-            background-color: #2A2C47;
-            cursor: pointer;
-            transition: 0.5s;
-        }
-        &__aboutBtn:hover,&__serviceBtn:hover,&__skillsBtn:hover{
-            border: 1px solid $primary;
-            background-color: $primary;
-            color: #2A2C47;
-        }
         &__wrapper{
             display: grid;
             grid-template-columns: 100%;
@@ -1297,21 +1223,7 @@
         background-color: $primary;
         color: #2A2C47;
     }
-    .Download--cv{
-        padding: 16px 32px;
-        font-size: 16px;
-        font-weight: 600;
-        color: #2A2C47;
-        border: 1px solid $primary;
-        background-color: $primary;
-        cursor: pointer;
-        transition: 0.5s;
-    }
-    .Download--cv:hover{
-        color: $primary;
-        border: 1px solid $primary;
-        background-color:  transparent;
-    }
+
 }
 
 //****** ABOUT ME SECTION END ******//
@@ -1565,27 +1477,6 @@
     font-family: $fontS;
     text-transform: capitalize;
     }
-    &__more{
-        display: block;
-        padding: 16px 32px;
-        font-size: 16px;
-        font-weight: 600;
-        text-transform: uppercase;
-        text-align: center;
-        color: $primary;
-        border: 1px solid $primary;
-        background-color: transparent;
-        cursor: pointer;
-        transition: 0.5s;
-        margin-left: auto;
-        margin-right: auto;
-        width: 10%;
-    }
-    &__more:hover{
-        color: #2A2C47;
-        border: 1px solid $primary;
-        background-color:  $primary;
-    }
     &__wrapper{
         margin-top: 56px;
         margin-bottom: 32px;
@@ -1632,21 +1523,6 @@
     &__github:hover{
         color: $primary;
     }
-    &__website{
-        cursor: pointer;
-        color: $primary;
-        background-color: transparent;
-        border: 1px solid $primary;
-        padding: 16px 32px;
-        text-transform: uppercase;
-        transition: 0.5s;
-    }
-    &__website:hover{
-        border: 1px solid $primary;
-        background-color: $primary;
-        color: #313552 ;
-        // font-weight: 700;
-    }
 }
 }
 
@@ -1672,27 +1548,6 @@
         font-family: $fontS;
         text-transform: capitalize;
         }
-        &__more{
-            display: block;
-            padding: 16px 32px;
-            font-size: 16px;
-            font-weight: 600;
-            text-transform: uppercase;
-            text-align: center;
-            color: $primary;
-            border: 1px solid $primary;
-            background-color: transparent;
-            cursor: pointer;
-            transition: 0.5s;
-            margin-left: auto;
-            margin-right: auto;
-            width: 40%;
-        }
-        &__more:hover{
-            color: #2A2C47;
-            border: 1px solid $primary;
-            background-color:  $primary;
-        }
         &__wrapper{
             margin-top: 40px;
             margin-bottom: 16px;
@@ -1701,7 +1556,6 @@
             grid-template-rows: max-content;
         }
         &__card{
-
             &--top{
                 img{
                     border-radius: 24px;
@@ -1738,21 +1592,6 @@
         &__github:hover{
             color: $primary;
         }
-        &__website{
-            cursor: pointer;
-            color: $primary;
-            background-color: transparent;
-            border: 1px solid $primary;
-            padding: 16px 32px;
-            text-transform: uppercase;
-            transition: 0.5s;
-        }
-        &__website:hover{
-            border: 1px solid $primary;
-            background-color: $primary;
-            color: #313552 ;
-            // font-weight: 700;
-        }
     }
 }
 
@@ -1778,27 +1617,6 @@
         font-size: 40px;
         font-family: $fontS;
         text-transform: capitalize;
-        }
-        &__more{
-            display: block;
-            padding: 16px 32px;
-            font-size: 16px;
-            font-weight: 600;
-            text-transform: uppercase;
-            text-align: center;
-            color: $primary;
-            border: 1px solid $primary;
-            background-color: transparent;
-            cursor: pointer;
-            transition: 0.5s;
-            margin-left: auto;
-            margin-right: auto;
-            width: 24%;
-        }
-        &__more:hover{
-            color: #2A2C47;
-            border: 1px solid $primary;
-            background-color:  $primary;
         }
         &__wrapper{
             margin-top: 40px;
@@ -1843,21 +1661,6 @@
         }
         &__github:hover{
             color: $primary;
-        }
-        &__website{
-            cursor: pointer;
-            color: $primary;
-            background-color: transparent;
-            border: 1px solid $primary;
-            padding: 16px 32px;
-            text-transform: uppercase;
-            transition: 0.5s;
-        }
-        &__website:hover{
-            border: 1px solid $primary;
-            background-color: $primary;
-            color: #313552 ;
-            // font-weight: 700;
         }
     }
 }

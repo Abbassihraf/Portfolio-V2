@@ -62,21 +62,6 @@
     &__github:hover{
         color: $primary;
     }
-    &__website{
-        cursor: pointer;
-        color: $primary;
-        background-color: transparent;
-        border: 1px solid $primary;
-        padding: 16px 32px;
-        text-transform: uppercase;
-        transition: 0.5s;
-    }
-    &__website:hover{
-        border: 1px solid $primary;
-        background-color: $primary;
-        color: #313552 ;
-        // font-weight: 700;
-    }
 }
 }
 
@@ -147,21 +132,6 @@
         &__github:hover{
             color: $primary;
         }
-        &__website{
-            cursor: pointer;
-            color: $primary;
-            background-color: transparent;
-            border: 1px solid $primary;
-            padding: 16px 32px;
-            text-transform: uppercase;
-            transition: 0.5s;
-        }
-        &__website:hover{
-            border: 1px solid $primary;
-            background-color: $primary;
-            color: #313552 ;
-            // font-weight: 700;
-        }
     }
 }
 
@@ -231,21 +201,6 @@
         }
         &__github:hover{
             color: $primary;
-        }
-        &__website{
-            cursor: pointer;
-            color: $primary;
-            background-color: transparent;
-            border: 1px solid $primary;
-            padding: 16px 32px;
-            text-transform: uppercase;
-            transition: 0.5s;
-        }
-        &__website:hover{
-            border: 1px solid $primary;
-            background-color: $primary;
-            color: #313552 ;
-            // font-weight: 700;
         }
     }
 }

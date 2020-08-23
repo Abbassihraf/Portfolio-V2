@@ -36,25 +36,6 @@
             margin-right: auto;
             margin-bottom: 64px;
         }
-        a{
-            display: block;
-            padding: 24px 32px;
-            background-color: $primary;
-            border: 1px solid $primary;
-            border-radius: 8px;
-            text-transform: uppercase;
-            font-weight: 700;
-            color: #1F2235;
-            margin-left: auto;
-            margin-right: auto;
-            width: 24%;
-            transition: 0.8s;
-        }
-        a:hover{
-            border: 1px solid $primary;
-            color: $primary;
-            background-color: transparent;
-        }
     }
     &__right{
         grid-area: 1/2;
@@ -103,26 +84,6 @@
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 40px;
-            }
-            a{
-                display: block;
-                padding: 16px 24px;
-                background-color: $primary;
-                border: 1px solid $primary;
-                border-radius: 8px;
-                text-transform: uppercase;
-                text-align-last: center;
-                font-weight: 700;
-                color: #1F2235;
-                margin-left: auto;
-                margin-right: auto;
-                width: 48%;
-                transition: 0.8s;
-            }
-            a:hover{
-                border: 1px solid $primary;
-                color: $primary;
-                background-color: transparent;
             }
         }
         &__right{
@@ -179,26 +140,6 @@
                 margin-right: auto;
                 margin-bottom: 40px;
             }
-            a{
-                display: block;
-                padding: 16px 24px;
-                background-color: $primary;
-                border: 1px solid $primary;
-                border-radius: 8px;
-                text-transform: uppercase;
-                text-align-last: center;
-                font-weight: 700;
-                color: #1F2235;
-                margin-left: auto;
-                margin-right: auto;
-                width: 48%;
-                transition: 0.8s;
-            }
-            a:hover{
-                border: 1px solid $primary;
-                color: $primary;
-                background-color: transparent;
-            }
         }
         &__right{
             grid-area: 2/1;
@@ -253,26 +194,6 @@
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 64px;
-            }
-            a{
-                display: block;
-                padding: 24px 32px;
-                background-color: $primary;
-                border: 1px solid $primary;
-                border-radius: 8px;
-                text-transform: uppercase;
-                text-align: center;
-                font-weight: 700;
-                color: #1F2235;
-                margin-left: auto;
-                margin-right: auto;
-                width: 40%;
-                transition: 0.8s;
-            }
-            a:hover{
-                border: 1px solid $primary;
-                color: $primary;
-                background-color: transparent;
             }
         }
         &__right{
