@@ -1567,6 +1567,7 @@
                 padding: 40px 24px;
                 background-color: #313552;
                 border-radius: 24px;
+                height: 332px;
                 h1{
                     color: white;
                     font-family: $fontS;
@@ -1596,7 +1597,7 @@
 }
 
 
-@media (min-width: 600px) and (max-width: 1199px){
+@media (min-width: 600px) and (max-width: 1023px){
     .projects{
         background-color: #1F2235;
         padding-bottom: 64px;
@@ -1642,7 +1643,75 @@
                     font-family: $fontS;
                     text-transform: capitalize;
                     font-size: 40px;
-                    width: 80%;
+                    margin-bottom: 24px;
+                }
+                h2{
+                    color: $primary;
+                    font-weight: 400;
+                }
+            }
+        }
+        &__github{
+            color: white;
+            font-size: 20px;
+            display: block;
+            margin-bottom: 32px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        &__github:hover{
+            color: $primary;
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px){
+    .projects{
+        background-color: #1F2235;
+        padding-bottom: 64px;
+        &__container{
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__title{
+            color: $primary;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        &__subtitle{
+        color: white;
+        font-size: 40px;
+        font-family: $fontS;
+        text-transform: capitalize;
+        }
+        &__wrapper{
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content;
+        }
+        &__card{
+
+            &--top{
+                img{
+                    border-radius: 24px;
+                    width: 100%;
+                    height: 320px;
+                }
+            }
+            &--bottom{
+                padding: 40px 24px;
+                background-color: #313552;
+                border-radius: 24px;
+                height: 338px;
+                h1{
+                    color: white;
+                    font-family: $fontS;
+                    text-transform: capitalize;
+                    font-size: 40px;
                     margin-bottom: 24px;
                 }
                 h2{
