@@ -23,6 +23,9 @@
         display: grid;
         grid-template-columns: 20% 20% 20% 20% 20%;
         grid-template-rows: max-content;
+        a{
+            text-align: center;
+        }
         il{
             display: block;
             margin: auto;
@@ -33,7 +36,6 @@
         }
         il:hover{
             color: $primary;
-            border-bottom: 1px solid $primary;
         }
     }
     &__copyright{
@@ -88,12 +90,14 @@
         }
     
         &__bottom{
-
             width: 56%;
             margin: 64px auto 32px;
             display: grid;
             grid-template-columns: 100%;
             grid-template-rows: max-content max-content max-content max-content max-content;
+            a{
+                text-align: center;
+            }
             il{
                 display: block;
                 margin: auto auto 18px;
@@ -104,7 +108,6 @@
             }
             il:hover{
                 color: $primary;
-                border-bottom: 1px solid $primary;
             }
         }
         &__copyright{
@@ -160,6 +163,9 @@
             display: grid;
             grid-template-columns: 20% 20% 20% 20% 20%;
             grid-template-rows: max-content;
+            a{
+                text-align: center;
+            }
             il{
                 display: block;
                 margin: auto;
@@ -171,7 +177,6 @@
             }
             il:hover{
                 color: $primary;
-                border-bottom: 1px solid $primary;
             }
         }
         &__copyright{
