@@ -18,7 +18,7 @@
         <h3 class="left__hello">Hello, I’m</h3>
         <h4 class="left__name">Abbassi</h3>
         <h5 class="left__lastName">Achraf</h3>
-        <h6 class="left__role">Web developer</h6>
+        <h6 class="left__role"></h6>
     </div>
     <div class="header__wrapper--right">
         <img src="images/achraf-img.png" alt="avatar">
@@ -181,3 +181,20 @@
 @@include('includes/testimonials.html')
 @@include('includes/social-media.html')
 @@include('includes/footer.html')
+
+<script>
+
+    var typed = new Typed(".left__role", {
+      strings: [
+        
+        'Web developer',
+        'Web designer',
+        ],
+        loop: true,
+        loopCount: Infinity,
+        smartBackspace: true,
+        typeSpeed: 80,
+        backSpeed: 100,
+    });
+    
+    </script>
