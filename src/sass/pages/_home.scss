@@ -1,0 +1,1695 @@
+//****** HEADER ******//
+@media (min-width: 1200px){
+
+
+
+.header{
+    background-image: url(../images/bg-header.png);
+    background-repeat: no-repeat;
+    padding: 4rem 16rem 0rem;
+
+    &__wrapper{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: max-content;
+        margin-top: 80px;
+        max-width: 96%;
+        margin-left: auto;
+        margin-right: auto;
+        &--left{
+            grid-area: 1/1;
+            margin: 32px auto auto 0px;
+            z-index: 1;
+            h3{
+                font-size: 56px;
+                color: $primary;
+                font-weight: 500;
+                font-family: $fontP;
+            }
+            h4{
+                color: white;
+                font-family: $fontS;
+                font-size: 120px;
+                font-weight: 700;
+            }
+            h5{
+                color: white;
+                font-family: $fontS;
+                font-size: 80px;
+                font-weight: 700;
+            }
+            h6{
+                color: white;
+                font-size: 24px;
+                font-weight: 400;
+                margin-top: 24px;
+                text-transform: uppercase;
+            }
+        }
+        &--right{
+            grid-area: 1/2;
+            z-index: 1;
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+.img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8{
+    position: absolute;
+
+}
+.img1{
+    top: 24%;
+    left: 4%;
+}
+
+.img2{
+    top: 50%;
+    left: 82%;
+}
+
+.img3{
+    top: 45%;
+    left: 26%;
+    width: 8%;
+    animation: 20s infinite alternate translateA;
+}
+
+.img4{
+    top: 45%;
+    left: 66%;
+    width: 8%;
+    animation: 20s infinite alternate-reverse translateB;
+}
+
+.img5{
+    top: 20%;
+    left: 76%;
+}
+
+.img6{
+    top: 50%;
+    left: 45%;
+    width: 1%;
+}
+
+.img7{
+    top: 35%;
+    left: 55%;
+    width: 2%;
+}
+
+.img8{
+    top: 40%;
+    left: 5%;
+    width: 1,5%;
+}
+
+// Animation
+.rotationA {
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotation;
+    -moz-animation-duration: 10s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotation;
+    -o-animation-duration: 10s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-moz-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-o-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(720deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+
+.rotationB {
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotation;
+    -moz-animation-duration: 3s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotation;
+    -o-animation-duration: 3s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-moz-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-o-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(720deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+
+@keyframes translateA {
+    0% {
+        transform: translatex(0px);
+    }
+    50% {
+        transform: translatex(-200px);
+    }
+    100% {
+        transform: translatex(440px);
+    }
+}
+
+@keyframes translateB {
+    0% {
+        transform: translatex(0px);
+    }
+    50% {
+        transform: translatex(-200px);
+    }
+    100% {
+        transform: translatex(440px);
+    }
+}
+
+
+
+}
+
+@media (min-width: 320px) and (max-width: 599px){
+
+
+    .header{
+        background-image: url(../images/bg-header.png);
+        background-repeat: no-repeat;
+        // padding: 4rem 16rem;
+        height: max-content;
+        background-size: cover;
+    
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content;
+            margin-top: 56px;
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            &--left{
+                grid-area: 1/1;
+                margin: 32px auto 40px 0px;
+                z-index: 1;
+                h3{
+                    font-size: 48px;
+                    color: $primary;
+                    font-weight: 500;
+                }
+                h4{
+                    color: white;
+                    font-family: $fontS;
+                    font-size: 72px;
+                    font-weight: 700;
+                }
+                h5{
+                    color: white;
+                    font-family: $fontS;
+                    font-size: 64px;
+                    font-weight: 700;
+                }
+                h6{
+                    color: white;
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-top: 24px;
+                    text-transform: uppercase;
+                }
+            }
+            &--right{
+                grid-area: 2/1;
+                z-index: 1;
+                img{
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 80%;
+                }
+            }
+        }
+    }
+    
+    .img2,.img5,.img6,.img7,.img8{
+        position: absolute;
+        display: none;
+    
+    }
+    .img1{
+        top: 17%;
+        left: 70%;
+        width: 24%;
+        position: absolute;
+    }
+
+    .img3{
+        position: absolute;
+        top: 45%;
+        left: 26%;
+        width: 32%;
+        animation: 10s infinite alternate translateA;
+    }
+    
+    .img4{
+        position: absolute;
+        top: 76%;
+        left: 66%;
+        width: 32%;
+        animation: 10s infinite alternate-reverse translateB;
+    }
+    
+    // Animation
+    .rotationA {
+        -webkit-animation-name: rotation;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: rotation;
+        -moz-animation-duration: 10s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -o-animation-name: rotation;
+        -o-animation-duration: 10s;
+        -o-animation-iteration-count: infinite;
+        -o-animation-timing-function: linear;
+        animation-name: rotation;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @-webkit-keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    @-moz-keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    @-o-keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    @keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(720deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    
+    
+    @keyframes translateA {
+        0% {
+            transform: translatex(0px);
+        }
+        50% {
+            transform: translatex(-200px);
+        }
+        100% {
+            transform: translatex(40px);
+        }
+    }
+    
+    @keyframes translateB {
+        0% {
+            transform: translatex(0px);
+        }
+        50% {
+            transform: translatex(-200px);
+        }
+        100% {
+            transform: translatex(0px);
+        }
+    }
+    
+}
+
+@media (min-width: 600px)and (max-width: 1023px){
+
+
+
+
+    .header{
+        background-image: url(../images/bg-header.png);
+        background-repeat: no-repeat;
+        height: max-content;
+        // padding: 4rem 16rem;
+    
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: max-content;
+            margin-top: 40px;
+            padding-bottom: 32px;
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            &--left{
+                grid-area: 1/1;
+                margin: 32px auto auto 0px;
+                z-index: 1;
+                h3{
+                    font-size: 32px;
+                    color: $primary;
+                    font-weight: 500;
+                }
+                h4{
+                    color: white;
+                    font-family: $fontS;
+                    font-size: 64px;
+                    font-weight: 700;
+                }
+                h5{
+                    color: white;
+                    font-family: $fontS;
+                    font-size: 48px;
+                    font-weight: 700;
+                }
+                h6{
+                    color: white;
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-top: 24px;
+                    text-transform: uppercase;
+                }
+            }
+            &--right{
+                grid-area: 1/2;
+                z-index: 1;
+                img{
+                    display: block;
+                    margin-left: auto;
+                    // margin-right: auto;
+                    width: 96%;
+                }
+            }
+        }
+    }
+    
+    .img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8{
+        position: absolute;
+    
+    }
+    .img1{
+        top: 8%;
+        left: 80%;
+        width: 8%;
+    }
+    
+    .img2{
+        top: 50%;
+        left: 82%;
+        display: none;
+    }
+    
+    .img3{
+        top: 26%;
+        left: 26%;
+        width: 14%;
+        animation: 40s infinite alternate translateA;
+    }
+    
+    .img4{
+        top: 45%;
+        left: 66%;
+        width: 8%;
+        animation: 40s infinite alternate-reverse translateB;
+        display: none;
+    }
+    
+    .img5{
+        top: 20%;
+        left: 46%;
+    }
+    
+    .img6{
+        top: 50%;
+        left: 45%;
+        width: 1%;
+        display: none;
+    }
+    
+    .img7{
+        top: 35%;
+        left: 55%;
+        width: 2%;
+        display: none;
+    }
+    
+    .img8{
+        top: 40%;
+        left: 5%;
+        width: 1,5%;
+        display: none;
+
+    }
+    
+    // Animation
+    .rotationA {
+        -webkit-animation-name: rotation;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: rotation;
+        -moz-animation-duration: 10s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -o-animation-name: rotation;
+        -o-animation-duration: 10s;
+        -o-animation-iteration-count: infinite;
+        -o-animation-timing-function: linear;
+        animation-name: rotation;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @-webkit-keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    @-moz-keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    @-o-keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    @keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(720deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    
+    .rotationB {
+        -webkit-animation-name: rotation;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: rotation;
+        -moz-animation-duration: 3s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -o-animation-name: rotation;
+        -o-animation-duration: 3s;
+        -o-animation-iteration-count: infinite;
+        -o-animation-timing-function: linear;
+        animation-name: rotation;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @-webkit-keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    @-moz-keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    @-o-keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    @keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(720deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    
+    @keyframes translateA {
+        0% {
+            transform: translatex(0px);
+        }
+        50% {
+            transform: translatex(-200px);
+        }
+        100% {
+            transform: translatex(440px);
+        }
+    }
+    
+    @keyframes translateB {
+        0% {
+            transform: translatex(0px);
+        }
+        50% {
+            transform: translatex(-200px);
+        }
+        100% {
+            transform: translatex(440px);
+        }
+    }
+    
+}
+
+@media (min-width: 1024px)and (max-width: 1199px){
+
+    
+    .header{
+        background-image: url(../images/bg-header.png);
+        background-repeat: no-repeat;
+        height: max-content;
+        // padding: 4rem 16rem;
+    
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: max-content;
+            margin-top: 40px;
+            padding-bottom: 32px;
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            &--left{
+                grid-area: 1/1;
+                margin: 32px auto auto 0px;
+                z-index: 1;
+                h3{
+                    font-size: 48px;
+                    color: $primary;
+                    font-weight: 500;
+                }
+                h4{
+                    color: white;
+                    font-family: $fontS;
+                    font-size: 88px;
+                    font-weight: 700;
+                }
+                h5{
+                    color: white;
+                    font-family: $fontS;
+                    font-size: 64px;
+                    font-weight: 700;
+                }
+                h6{
+                    color: white;
+                    font-size: 24px;
+                    font-weight: 400;
+                    margin-top: 24px;
+                    text-transform: uppercase;
+                }
+            }
+            &--right{
+                grid-area: 1/2;
+                z-index: 1;
+                img{
+                    display: block;
+                    margin-left: auto;
+                    // margin-right: auto;
+                    width: 96%;
+                }
+            }
+        }
+    }
+    
+    .img1,.img2,.img3,.img4,.img5,.img6,.img7,.img8{
+        position: absolute;
+    
+    }
+    .img1{
+        top: 8%;
+        left: 80%;
+        width: 8%;
+    }
+    
+    .img2{
+        top: 50%;
+        left: 82%;
+        display: none;
+    }
+    
+    .img3{
+        top: 26%;
+        left: 26%;
+        width: 14%;
+        animation: 40s infinite alternate translateA;
+    }
+    
+    .img4{
+        top: 45%;
+        left: 66%;
+        width: 8%;
+        animation: 40s infinite alternate-reverse translateB;
+        display: none;
+    }
+    
+    .img5{
+        top: 20%;
+        left: 46%;
+    }
+    
+    .img6{
+        top: 50%;
+        left: 45%;
+        width: 1%;
+        display: none;
+    }
+    
+    .img7{
+        top: 35%;
+        left: 55%;
+        width: 2%;
+        display: none;
+    }
+    
+    .img8{
+        top: 30%;
+        left: 5%;
+        width: 1,5%;
+
+    }
+    
+    // Animation
+    .rotationA {
+        -webkit-animation-name: rotation;
+        -webkit-animation-duration: 10s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: rotation;
+        -moz-animation-duration: 10s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -o-animation-name: rotation;
+        -o-animation-duration: 10s;
+        -o-animation-iteration-count: infinite;
+        -o-animation-timing-function: linear;
+        animation-name: rotation;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @-webkit-keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    @-moz-keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    @-o-keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    @keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(720deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    
+    .rotationB {
+        -webkit-animation-name: rotation;
+        -webkit-animation-duration: 3s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-name: rotation;
+        -moz-animation-duration: 3s;
+        -moz-animation-iteration-count: infinite;
+        -moz-animation-timing-function: linear;
+        -o-animation-name: rotation;
+        -o-animation-duration: 3s;
+        -o-animation-iteration-count: infinite;
+        -o-animation-timing-function: linear;
+        animation-name: rotation;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+    @-webkit-keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    @-moz-keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    @-o-keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    @keyframes rotation {
+        0% {-webkit-transform:rotate(0deg);
+            -moz-transform:rotate(0deg);
+            -o-transform:rotate(0deg);
+            transform:rotate(0deg);}
+        100% {-webkit-transform:rotate(360deg);
+            -moz-transform:rotate(720deg);
+            -o-transform:rotate(360deg);
+            transform:rotate(360deg);}
+    }
+    
+    @keyframes translateA {
+        0% {
+            transform: translatex(0px);
+        }
+        50% {
+            transform: translatex(-200px);
+        }
+        100% {
+            transform: translatex(440px);
+        }
+    }
+    
+    @keyframes translateB {
+        0% {
+            transform: translatex(0px);
+        }
+        50% {
+            transform: translatex(-200px);
+        }
+        100% {
+            transform: translatex(440px);
+        }
+    }
+
+}
+
+//****** HEADER END ******//
+//************************//
+
+
+//******************************//
+//****** ABOUT ME SECTION ******//
+
+@media (min-width: 1200px){
+    .img9,.img10,.img11{
+        position: absolute;
+    
+    }
+    .img9{
+        top: 129%;
+        left: 9%;
+    }
+    .img10{
+        top: 90%;
+        left: 85%;
+    }
+    .img11{
+        top: 120%;
+        left: 84%;
+    }
+    .A-s-s{
+        padding: 0rem 16rem;
+        background-color: #1F2235;
+        padding-bottom: 80px;
+    }
+    .aboutMe{
+        padding-bottom: 40px;
+        &__list{
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: max-content;
+            background-color: #1F2235;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: max-content;
+            background-color: #313552;
+            padding: 80px 24px;
+            &--left{
+                margin: auto;
+                img{
+                    display: block;
+                    margin:auto;
+                }
+            }
+            &--right{
+                h1{
+                    color: $primary;
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    margin-bottom: 24px;
+                }
+                h2{
+                    color: white;
+                    font-size: 40px;
+                    font-family: $fontS;
+                    width: 88%;
+                    line-height: 3.2rem;
+                    margin-bottom: 24px;
+                }
+                h3{
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 400;
+                    width: 96%;
+                    line-height: 1.6em;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    .activeBtn{
+        border: 1px solid $primary;
+        background-color: $primary;
+        color: #2A2C47;
+    }
+}
+@media (min-width: 320px) and (max-width: 599px){
+    .img9,.img10,.img11{
+        display: none;
+    
+    }
+    .A-s-s{
+        background-color: #1F2235;
+        padding-bottom: 64px;
+    }
+    .aboutMe{
+
+        &__list{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content max-content;
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: red;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content;
+            background-color: #313552;
+            padding: 80px 24px 56px;
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            &--left{
+                margin: auto auto 32px ;
+                img{
+                    display: block;
+                    margin:auto;
+                    width: 96%;
+                }
+            }
+            &--right{
+                h1{
+                    color: $primary;
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    margin-bottom: 24px;
+                }
+                h2{
+                    color: white;
+                    font-size: 40px;
+                    font-family: $fontS;
+                    width: 88%;
+                    line-height: 3.2rem;
+                    margin-bottom: 24px;
+                }
+                h3{
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 400;
+                    width: 96%;
+                    line-height: 1.6em;
+                    text-align: justify;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    .activeBtn{
+        border: 1px solid $primary;
+        background-color: $primary;
+        color: #2A2C47;
+    }
+
+}
+
+@media (min-width: 600px) and (max-width: 1199px){
+    .img9,.img10,.img11{
+        display: none;
+    
+    }
+    .A-s-s{
+        background-color: #1F2235;
+        padding-bottom: 64px;
+    }
+    .aboutMe{
+        &__list{
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: max-content;
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content;
+            background-color: #313552;
+            padding: 80px 24px 56px;
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            &--left{
+                margin: auto auto 32px ;
+                img{
+                    display: block;
+                    margin:auto;
+                    width: 96%;
+                }
+            }
+            &--right{
+                h1{
+                    color: $primary;
+                    font-size: 16px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    margin-bottom: 24px;
+                }
+                h2{
+                    color: white;
+                    font-size: 40px;
+                    font-family: $fontS;
+                    width: 88%;
+                    line-height: 3.2rem;
+                    margin-bottom: 24px;
+                }
+                h3{
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 400;
+                    width: 96%;
+                    line-height: 1.6em;
+                    text-align: justify;
+                    margin-bottom: 40px;
+                }
+            }
+        }
+    }
+    .activeBtn{
+        border: 1px solid $primary;
+        background-color: $primary;
+        color: #2A2C47;
+    }
+
+}
+
+//****** ABOUT ME SECTION END ******//
+//***********************************/
+
+
+//*****************************//
+//****** SERVICE SECTION ******//
+
+@media (min-width: 1200px){
+    .service{
+        background-color: #1F2235;
+        padding-bottom: 40px;
+        display: none;
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: max-content;
+            background-color: #313552;
+            padding: 80px 24px;
+        }
+        &__card{
+            img{
+                margin: auto auto 32px;
+                display: block;
+            }
+            h1{
+                color: white;
+                font-family: $fontS;
+                text-align: center;
+                margin-bottom: 32px;
+            }
+            p{
+                color: white;
+                text-align: justify;
+                text-align-last: center;
+                font-size: 24px;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 599px){
+    .service{
+        display: none;
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content;
+            background-color: #313552;
+            padding: 80px 24px 0px;
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__card{
+            margin-bottom: 48px;
+            img{
+                margin: auto auto 24px;
+                display: block;
+            }
+            h1{
+                color: white;
+                font-family: $fontS;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+            p{
+                color: white;
+                text-align: justify;
+                text-align-last: center;
+                font-size: 20px;
+                font-weight: 400;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px){
+    .service{
+        display: none;
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content;
+            background-color: #313552;
+            padding: 80px 24px 0px;
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__card{
+            margin-bottom: 48px;
+            img{
+                margin: auto auto 24px;
+                display: block;
+            }
+            h1{
+                color: white;
+                font-family: $fontS;
+                text-align: center;
+                margin-bottom: 16px;
+            }
+            p{
+                color: white;
+                text-align: justify;
+                text-align-last: center;
+                font-size: 20px;
+                font-weight: 400;
+                width: 56%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+
+//****** SERVICE SECTION END ******//
+//*********************************//
+
+
+//*****************************//
+//****** SKILLS SECTION ******//
+
+@media (min-width: 1200px){
+    .skills{
+        background-color: #1F2235;
+        padding-bottom: 40px;
+        display: none;
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 33.3% 33.3% 33.3%;
+            grid-template-rows: max-content max-content;
+            background-color: #313552;
+            padding: 80px 24px 40px;
+        }
+        &__card{
+            img{
+                margin: auto auto 24px;
+                display: block;
+                width: 96px;
+            }
+            h1{
+                color: white;
+                font-family: $fontS;
+                text-align: center;
+                margin-bottom: 56px;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+@media (min-width: 320px) and (max-width: 599px){
+    .skills{
+        display: none;
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: max-content max-content;
+            background-color: #313552;
+            padding: 80px 24px 0px;
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__card{
+            margin-bottom: 48px;
+            img{
+                margin: auto auto 24px;
+                display: block;
+                width: 48px;
+            }
+            h1{
+                color: white;
+                font-family: $fontS;
+                text-align: center;
+                margin-bottom: 16px;
+                text-transform: capitalize;
+                font-size: 16px;
+            }
+
+        }
+    }
+}
+
+@media (min-width: 600px) and (max-width: 1199px){
+    .skills{
+        display: none;
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: max-content max-content;
+            background-color: #313552;
+            padding: 80px 24px 0px;
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__card{
+            margin-bottom: 48px;
+            img{
+                margin: auto auto 24px;
+                display: block;
+                width: 88px;
+            }
+            h1{
+                color: white;
+                font-family: $fontS;
+                text-align: center;
+                margin-bottom: 16px;
+                text-transform: capitalize;
+                font-size: 24px;
+            }
+
+        }
+    }
+}
+
+//****** SKILLS SECTION END ******//
+//*********************************//
+
+
+
+
+//*****************************//
+//****** PROJECTS SECTION ******//
+@media (min-width: 1200px){
+.projects{
+    padding: 0rem 16rem;
+    background-color: #1F2235;
+    padding-bottom: 80px;
+    &__title{
+        color: $primary;
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 8px;
+    }
+    &__subtitle{
+    color: white;
+    font-size: 40px;
+    font-family: $fontS;
+    text-transform: capitalize;
+    }
+    &__wrapper{
+        margin-top: 56px;
+        margin-bottom: 32px;
+        display: grid;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        grid-template-rows: max-content;
+    }
+    &__card{
+        &--top{
+            .coverProjects{
+                border-radius: 24px;
+                width: 100%;
+                height: 384px;
+            }
+        }
+        &--bottom{
+            padding: 40px 24px;
+            background-color: #313552;
+            max-width:520px;
+            border-radius: 24px;
+            h1{
+                color: white;
+                font-family: $fontS;
+                text-transform: capitalize;
+                font-size: 40px;
+                width: 80%;
+                margin-bottom: 24px;
+            }
+            h2{
+                color: $primary;
+                font-weight: 400;
+                margin-bottom: 16px;
+            }
+        }
+    }
+    &__github{
+        color: white;
+        font-size: 20px;
+        display: block;
+        margin-bottom: 56px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    &__github:hover{
+        color: $primary;
+    }
+}
+}
+
+@media (min-width: 320px) and (max-width: 599px){
+    .projects{
+        background-color: #1F2235;
+        padding-bottom: 64px;
+        &__container{
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__title{
+            color: $primary;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        &__subtitle{
+        color: white;
+        font-size: 40px;
+        font-family: $fontS;
+        text-transform: capitalize;
+        }
+        &__wrapper{
+            margin-top: 40px;
+            margin-bottom: 16px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content;
+        }
+        &__card{
+            &--top{
+                img{
+                    border-radius: 24px;
+                    width: 100%;
+                    height: 320px;
+                }
+            }
+            &--bottom{
+                padding: 40px 24px;
+                background-color: #313552;
+                border-radius: 24px;
+                height: 332px;
+                h1{
+                    color: white;
+                    font-family: $fontS;
+                    text-transform: capitalize;
+                    font-size: 32px;
+                    margin-bottom: 24px;
+                }
+                h2{
+                    color: $primary;
+                    font-weight: 400;
+                    margin-bottom: 16px;
+                }
+            }
+        }
+        &__github{
+            color: white;
+            font-size: 16px;
+            display: block;
+            margin-bottom: 40px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        &__github:hover{
+            color: $primary;
+        }
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 1023px){
+    .projects{
+        background-color: #1F2235;
+        padding-bottom: 64px;
+        &__container{
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__title{
+            color: $primary;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        &__subtitle{
+        color: white;
+        font-size: 40px;
+        font-family: $fontS;
+        text-transform: capitalize;
+        }
+        &__wrapper{
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content;
+        }
+        &__card{
+
+            &--top{
+                img{
+                    border-radius: 24px;
+                    width: 100%;
+                    height: 320px;
+                }
+            }
+            &--bottom{
+                padding: 40px 24px;
+                background-color: #313552;
+                border-radius: 24px;
+                h1{
+                    color: white;
+                    font-family: $fontS;
+                    text-transform: capitalize;
+                    font-size: 40px;
+                    margin-bottom: 24px;
+                }
+                h2{
+                    color: $primary;
+                    font-weight: 400;
+                }
+            }
+        }
+        &__github{
+            color: white;
+            font-size: 20px;
+            display: block;
+            margin-bottom: 32px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        &__github:hover{
+            color: $primary;
+        }
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1199px){
+    .projects{
+        background-color: #1F2235;
+        padding-bottom: 64px;
+        &__container{
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__title{
+            color: $primary;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        &__subtitle{
+        color: white;
+        font-size: 40px;
+        font-family: $fontS;
+        text-transform: capitalize;
+        }
+        &__wrapper{
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content;
+        }
+        &__card{
+
+            &--top{
+                img{
+                    border-radius: 24px;
+                    width: 100%;
+                    height: 320px;
+                }
+            }
+            &--bottom{
+                padding: 40px 24px;
+                background-color: #313552;
+                border-radius: 24px;
+                height: 338px;
+                h1{
+                    color: white;
+                    font-family: $fontS;
+                    text-transform: capitalize;
+                    font-size: 40px;
+                    margin-bottom: 24px;
+                }
+                h2{
+                    color: $primary;
+                    font-weight: 400;
+                }
+            }
+        }
+        &__github{
+            color: white;
+            font-size: 20px;
+            display: block;
+            margin-bottom: 32px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        &__github:hover{
+            color: $primary;
+        }
+    }
+}
+//****** PROJECTS SECTION END ******//
+//*********************************//
