@@ -1,4 +1,4 @@
-
+<?php require_once '../resources/config.php';?>
 
 <!doctype html>
 <html class="no-js" lang="">
@@ -44,7 +44,7 @@
                 </div>
                 <div class="fxt-form">
 				<form  action='<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>' method="POST">
-
+                <?php login_users()?>
                         <div class="form-group fxt-transformY-50 fxt-transition-delay-1">
                             <input type="username" class="form-control" name="username" placeholder="Username" required="required">
                             <i class="flaticon-envelope"></i>
@@ -93,6 +93,7 @@
   "showMethod": "fadeIn",
   "hideMethod": "fadeOut"
 }
+<?php display_msg() ?>
     </script>
 
     <!-- Bootstrap js -->
