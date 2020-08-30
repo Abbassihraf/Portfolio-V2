@@ -7,9 +7,9 @@
 
         <link rel="icon" type="image/png" href="assets/images/logo.png"/>
 
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
-        <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="assets/css/owl-carousel/owl.carousel.min.css">
+        <link rel="stylesheet" href="assets/css/owl-carousel/owl.theme.default.min.css">
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
@@ -23,7 +23,7 @@
             rel="stylesheet">
 
         <!-- font-awesome -->
-        <link rel="stylesheet" href="css/font-awesome/all.min.css">
+        <link rel="stylesheet" href="assets/css/font-awesome/all.min.css">
         <script src="https://kit.fontawesome.com/4ed5570f86.js" crossorigin="anonymous"></script>
 
         <!-- AOS Library -->
