@@ -11065,9 +11065,10 @@ button,
     transition: width .2s
 }
 
-.app-header__logo .logo-src {
-    height: 36.0764px;
-    width: 100.7898px;
+.app-header__logo .logo-src img{
+    height: 80px;
+    width: 80px;
+    margin: auto;
     background: url(../images/logo-inverse.png);
     background-repeat: no-repeat;
 }
@@ -11181,7 +11182,7 @@ button,
 .app-header.header-text-light .header__pane .hamburger.is-active .hamburger-inner,
 .app-header.header-text-light .header__pane .hamburger-inner::before,
 .app-header.header-text-light .header__pane .hamburger-inner::after {
-    background-color: #03704D !important;
+    background-color: #FFC576 !important;
 }
 
 .app-header.header-text-light .search-wrapper .input-holder .search-icon span::after {
@@ -11343,12 +11344,13 @@ button,
 
 .app-sidebar__heading {
     text-transform: uppercase;
-    font-size: .8rem;
+    font-size: 1rem;
     margin: .75rem 0;
     font-weight: bold;
-    color: #03704D;
+    color: #FFC576;
     white-space: nowrap;
-    position: relative
+    position: relative;
+    margin-bottom: 16px;
 }
 
 .sidebar-mobile-overlay {
@@ -11412,16 +11414,16 @@ button,
     padding: 0 1.5rem 0 45px;
     position: relative;
     border-radius: .25rem;
-    color: #343a40;
+    color: white;
     white-space: nowrap;
     transition: all .2s;
     margin: .1rem 0
 }
 
 .vertical-nav-menu li a:hover {
-    background: #E70D00;
+    background: #FFC576;
     text-decoration: none;
-    color: white;
+    color: #1f2336;
     font-weight: bolder;
 }
 
@@ -11443,7 +11445,7 @@ button,
 
 .vertical-nav-menu li a.mm-active {
     color: white;
-    background: #03704D;
+    background: #313552;
     font-weight: bold;
 }
 
@@ -11486,14 +11488,14 @@ button,
 }
 
 .vertical-nav-menu ul>li>a {
-    color: #6c757d;
+    color: white;
     height: 2rem;
     line-height: 2rem;
     padding: 0 1.5rem 0
 }
 
 .vertical-nav-menu ul>li>a:hover {
-    color: white;
+    color: #1f2235;
 }
 
 .vertical-nav-menu ul>li>a .metismenu-icon {
@@ -11574,7 +11576,7 @@ button,
 }
 
 .app-sidebar.sidebar-text-light .app-header__logo .logo-src {
-    background: url(../images/logo.png)
+    background: url(images/logo.png)
 }
 
 .app-sidebar.sidebar-text-light .app-header__logo .hamburger-inner,
@@ -11893,7 +11895,8 @@ button,
 }
 
 .app-theme-white .app-sidebar {
-    background: #fff
+    background: #1f2336;
+    padding: 136px 0px;
 }
 
 .app-theme-white .app-page-title {
@@ -11902,15 +11905,15 @@ button,
 
 .app-theme-white .app-footer .app-footer__inner,
 .app-theme-white .app-header {
-    background: #fafbfc
+    background: #313552;
+    height: 96px;
 }
 
-.app-theme-white.fixed-header .app-header__logo {
-    background: rgba(250, 251, 252, 0.1)
-}
+
 
 .app-footer {
-    height: 60px
+    height: 60px;
+    display: none;
 }
 
 .app-footer .app-footer__inner {
@@ -16718,7 +16721,10 @@ legend {
     display: flex;
     flex: 1;
     position: relative;
-    align-items: center
+    align-items: center;
+    color: white;
+    font-weight: 700;
+    margin-right: 48px;
 }
 
 .widget-content .widget-content-left .widget-heading {
@@ -23506,7 +23512,7 @@ legend {
 .hamburger.is-active .hamburger-inner,
 .hamburger.is-active .hamburger-inner::before,
 .hamburger.is-active .hamburger-inner::after {
-    background-color: #03704D;
+    background-color: #FFC576;
 }
 
 .hamburger-box {
@@ -23527,7 +23533,7 @@ legend {
 .hamburger-inner::after {
     width: 24px;
     height: 2px;
-    background-color: #03704D;
+    background-color: #FFC576;
     border-radius: 10px;
     position: absolute;
     transition-property: transform;

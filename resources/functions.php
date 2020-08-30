@@ -142,7 +142,7 @@ function change_password(){
 
 
 
-// require_once('component/loginComponent.php');
+require_once('component/loginComponent.php');
 
 
 
