@@ -20,7 +20,7 @@
 </footer>
 
 
-<script src="js/typed.js"></script>
+<script src="assets/js/typed.js"></script>
 
 <!-- build:js js/main.min.js -->
 <script src="assets/js/main.min.js"></script>
