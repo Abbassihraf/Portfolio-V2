@@ -2,7 +2,7 @@
         <div class="app-header header-shadow">
             <div class="app-header__logo">
                 <div class="logo-src">
-                    <img src="../assets/images/logo.png" alt="">
+                    <a href="index.php"><img src="../assets/images/logo.png" alt=""></a>
                 </div>
                 <div class="header__pane ml-auto">
                     <div>
