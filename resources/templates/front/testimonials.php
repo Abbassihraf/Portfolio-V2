@@ -14,7 +14,7 @@
                     <img class="testimonials__avatar" src="/images/avatar1.png" alt="">
                     <h1>youssef <span>ouadid </span></h1>
                     <h2>web trainer youcode</h2>
-                    <img class="quote" src="images/quote.png" alt="quote icon">
+                    <img class="quote" src="assets/images/quote.png" alt="quote icon">
                 </div>
                 <div class="testimonials__card--bottom">
                     <p>Achraf ABBASSI s'est révélé être une personne remarquable que
