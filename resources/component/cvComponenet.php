@@ -20,6 +20,31 @@ cv;
 }
 
 
+// submit a cv to database admin area
+function submit_cv(){
+    global $pdo;
+    if(isset($_POST['submit'])){
+        try{
+        $file = $_FILES['file']['name'];
+
+        upload_file('file', $cover_id);
+        $sql = "INSERT INTO `cv` (`id`, `published_at`, `file`) VALUES (NULL, CURRENT_TIMESTAMP, ?)";
+        $stmt = $pdo->prepare($sql);
+        $result = $stmt->execute([$cover_id]);
+        if($result){
+            set_message('success','cv created successfully');
+            
+          } else {
+            set_message('error','try again later');
+            
+          }
+        } catch (PDOException $e) {
+            set_message('error','query failed');
+            
+            echo 'query failed' . $e->getMessage();
+        }
+    }
+}
 
 
 
