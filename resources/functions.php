@@ -58,10 +58,10 @@ function upload_image($name, &$cover_id)
         $uploadfile = $upload_path . basename($cover_pic_name);
         $dest = '../uploads/thumbnails/' . basename($cover_pic_name);
         // cover image validation, size and extension
-        if ($cover_pic_type == "image/jpg" || $cover_pic_type = "image/jpeg" || $cover_pic_type = "image/png" || $cover_pic_type = "image/gif") // check file extension
+        if ($cover_pic_type == "image/jpg" || $cover_pic_type = "image/jpeg" || $cover_pic_type = "image/png" || $cover_pic_type = "image/gif" || $cover_pic_type = "image/pdf") // check file extension
         {
             // You should also check filesize here.
-            if ($cover_pic_size < 2000000) { //check if file size below 2mb
+            if ($cover_pic_size < 5000000) { //check if file size below 2mb
                 move_uploaded_file($cover_pic_temp, $uploadfile); // move upload file temperory directory to your upload folder
                 make_thumb($uploadfile, $ext, $dest, 100);
             } else {
@@ -138,13 +138,56 @@ function change_password(){
 }
 
 
+//**------  Handling  pdf files Uploads-------*/
+function upload_file($name, &$cover_id)
+{
+    global $pdo;
+    //**------  Handling  Image -------*/
+    if (!empty($_FILES[$name]['name'])) {
 
+        //Insert the request information
+        //into our media and event table.
+        $cover_pic_name = $_FILES[$name]['name'];
+        $extension = pathinfo($cover_pic_name, PATHINFO_EXTENSION);
+        $cover_pic_type = $_FILES[$name]['type'];
+        $cover_pic_size = $_FILES[$name]['size'];
+        $size = ($cover_pic_size / 1000) . "KB";
+        $cover_pic_temp = $_FILES[$name]['tmp_name'];
+        $upload_path = '../uploads/'; //setting up ulpoad folder
+        $uploadfile = $upload_path . basename($cover_pic_name);
+        $dest = '../uploads/thumbnails/' . basename($cover_pic_name);
+        // cover image validation, size and extension
+        if ($cover_pic_type == "image/docx" || $cover_pic_type = "image/pdf") // check file extension
+        {
+            // You should also check filesize here.
+            if ($cover_pic_size < 5000000) { //check if file size below 2mb
+                move_uploaded_file($cover_pic_temp, $uploadfile); // move upload file temperory directory to your upload folder
+            } else {
+                set_message('error', 'Your file To large PLease Upload 5mb size');
+            }
+
+        } else {
+            set_message('error', 'Upload pdf, docx, ,file format..... check file extension');
+        }
+        //The SQL statement.
+        $image_query = "INSERT INTO `media` (`id`, `file_name`, `file_type`, `file_size`, `file_location`, `media_type`, `thumbnail`, `timestamp`, `is_deleted`) VALUES (NULL, ?, ?, ?, ?, 'pdf file', ?, CURRENT_TIMESTAMP, '0')";
+        //Prepare our INSERT SQL statement.
+        $statment = $pdo->prepare($image_query);
+        //Execute the statement and insert the data.
+        $statment->execute([$cover_pic_name, $extension, $size, $uploadfile, $dest]);
+        //Get the ID of the row we just inserted.
+        $cover_id = $pdo->lastInsertId();
+    } else {
+        $cover_id = 1;
+    }
+}
 
 
 
 require_once('component/loginComponent.php');
 require_once('component/testimonialsComponent.php');
 require_once('component/projectsComponenet.php');
+require_once('component/cvComponenet.php');
 
 
 
