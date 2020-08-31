@@ -30,7 +30,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <?php display_prjects_admin() ?>
+                            <?php display_projects_admin() ?>
                         </tbody>
                     </table>
                 </div>

@@ -94,5 +94,40 @@ function submit_project(){
 }
 
 
+//projects Management. display projects to be edited or deleted in admin area
+
+function display_projects_admin()
+{
+    global $pdo;
+    try{
+        $sql = "SELECT p.*, m.file_name FROM projects p join media m on p.cover = m.id ORDER BY p.id DESC "; 
+        $stmt = $pdo->query($sql)->fetchAll();
+        foreach ($stmt as $projects){
+        echo <<<projects
+        <tr>
+        <td class="text-center text-muted">{$projects->id}</td>
+        <td class=""><img src="../uploads/thumbnails/{$projects->file_name}" class="br-a" alt="projects thumbnail"></td>
+        <td class=""> {$projects->title} </td>
+        <td class=""> {$projects->github} </td>
+        <td class=""> {$projects->link} </td>
+
+        <td class="text-center">
+            <a href="index.php?edit_projects={$projects->id}">
+            <button type="button" id="PopoverCustomT-1"class=" btn-wide btn btn-success btn-icon-only">
+                <i class="pe-7s-note" style="font-size: 1rem;"></i> Edit
+            </button>
+            </a>
+            <button type="button" id="PopoverCustomT-1" class=" btn-icon btn-icon-only btn btn-outline-danger" value="index.php?manage_projects&delete_projects={$projects->id}" data-toggle="modal" data-target="#exampleModal">
+                <i class="pe-7s-trash" style="font-size: 1rem;"></i>
+            </button>
+        </td>
+    </tr>
+projects;
+    }
+} catch (PDOException $e) {
+    echo 'query failed' . $e->getMessage();
+}
+}
+
 
 ?>
