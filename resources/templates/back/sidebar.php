@@ -62,6 +62,28 @@
                                     </ul>
                                 </li>
 
+                                <li>
+                                    <a href="#">
+                                        <i class="metismenu-icon pe-7s-display2"></i>
+                                        Curriculum
+                                        <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                            <a href="index.php?create_cv">
+                                                <i class="metismenu-icon">
+                                                </i>Create new cv
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="index.php?manage_projects">
+                                                <i class="metismenu-icon">
+                                                </i>Manage projects
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
                                 <li class="app-sidebar__heading">Clients</li>
 
                                 <li>

@@ -40,6 +40,11 @@ include(TEMPLATE_BACK . DS . "head.php");
             include(TEMPLATE_BACK . DS . "projects/edit_projects.php");
         }
 
+        // Projects requests
+        
+        if(isset($_GET['create_cv'])){
+            include(TEMPLATE_BACK . DS . "curriculum/create_cv.php");
+        }
 
 
 ?>
