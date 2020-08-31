@@ -33,6 +33,12 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['create_projects'])){
             include(TEMPLATE_BACK . DS . "projects/create_projects.php");
         }
+        if(isset($_GET['manage_projects'])){
+            include(TEMPLATE_BACK . DS . "projects/manage_projects.php");
+        }
+        if(isset($_GET['edit_projects'])){
+            include(TEMPLATE_BACK . DS . "projects/edit_projects.php");
+        }
 
 
 

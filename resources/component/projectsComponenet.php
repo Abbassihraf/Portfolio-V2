@@ -75,7 +75,7 @@ function submit_project(){
 
         //**------  function for handling image upload-------*/
         upload_image('cover', $cover_id);
-        $sql = "INSERT INTO `projects` (`id`, `title`, `github`, `link`, `profile`) VALUES (NULL, ?, ?, ?, ?)";
+        $sql = "INSERT INTO `projects` (`id`, `title`, `github`, `link`, `cover`) VALUES (NULL, ?, ?, ?, ?)";
         $stmt = $pdo->prepare($sql);
         $result = $stmt->execute([$title, $github, $link, $cover_id]);
         if($result){
