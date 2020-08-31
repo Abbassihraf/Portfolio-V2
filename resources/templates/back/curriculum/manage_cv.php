@@ -1,4 +1,4 @@
-
+<?php delete_cv() ?>
 <div class="app-main__inner">
     <div class="app-page-title">
         <div class="page-title-wrapper">
