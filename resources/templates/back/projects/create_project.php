@@ -1,5 +1,5 @@
 <?php 
-submit_team();
+submit_project();
 
 ?>
 <div class="app-main__inner">
