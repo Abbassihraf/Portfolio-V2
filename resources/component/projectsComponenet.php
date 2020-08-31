@@ -170,6 +170,34 @@ function delete_projects()
 }
 
 
+// Update projects information
+
+function update_projects()
+{
+    global $pdo;
+    if (isset($_POST['submit'])) {
+        try {
+          if(empty($_FILES['cover']['name'])){
+            $cover_id = $_POST['cover_id'];
+          }else{
+            //**------  function for handling image upload-------*/
+            upload_image('cover', $cover_id);
+          }
+            
+
+            $sql = "UPDATE `projects` SET `title` = ?,`github` = ?, `cover` = ?, `link` = ?  WHERE `projects`.`id` = ?";
+            $update_team = $pdo->prepare($sql);
+            $update_team->execute([$_POST['title'], $_POST['github'], $cover_id ,$_POST['link'], $_POST['projects_id']]);
+            if ($update_team) {
+                set_message('success', 'project updated successfully');
+            } else {
+                set_message('error', 'query failed try later');
+            }
+        } catch (PDOException $e) {
+            echo 'query failed' . $e->getMessage();
+        }
+    }
+}
 
 
 ?>

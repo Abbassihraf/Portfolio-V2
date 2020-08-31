@@ -24,8 +24,8 @@
                             <tr>
                                 <th class="text-center">#</th>
                                 <th>Thumbnail</th>
-                                <th>Title</th>
-                                <th>Github</th>
+                                <th>Project name</th>
+                                <th>Project repository</th>
                                 <th>Website link</th>
                             </tr>
                         </thead>
