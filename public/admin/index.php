@@ -16,11 +16,11 @@ include(TEMPLATE_BACK . DS . "head.php");
             include(TEMPLATE_BACK . DS . "dashboard.php") ;
         }
 
-        // 2ai News requests
+        // Testimonials requests
         
-        // if(isset($_GET['create_2AINewsC2'])){
-        //     include(TEMPLATE_BACK . DS . "2aiNewsC2/create_2AINewsC2.php");
-        // }
+        if(isset($_GET['create_testimonials'])){
+            include(TEMPLATE_BACK . DS . "testimonials/create_testimonials.php");
+        }
 
 
 
