@@ -144,6 +144,7 @@ function change_password(){
 
 require_once('component/loginComponent.php');
 require_once('component/testimonialsComponent.php');
+require_once('component/projectsComponenet.php');
 
 
 

@@ -28,6 +28,11 @@ include(TEMPLATE_BACK . DS . "head.php");
             include(TEMPLATE_BACK . DS . "testimonials/edit_testimonials.php");
         }
 
+        // Projects requests
+        
+        if(isset($_GET['create_projects'])){
+            include(TEMPLATE_BACK . DS . "projects/create_projects.php");
+        }
 
 
 

@@ -48,13 +48,13 @@
                                     </a>
                                     <ul>
                                         <li>
-                                            <a href="index.php?create_innov-news">
+                                            <a href="index.php?create_projects">
                                                 <i class="metismenu-icon">
                                                 </i>Create new project
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.php?manage_innov-news">
+                                            <a href="index.php?manage_projects">
                                                 <i class="metismenu-icon">
                                                 </i>Manage projects
                                             </a>

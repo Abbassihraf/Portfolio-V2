@@ -61,6 +61,37 @@ projects;
 }
 
 
+// Create a projects from admin area to database
+
+function submit_project(){
+    global $pdo;
+    if(isset($_POST['submit'])){
+        try{
+        $github = trim($_POST['github']);
+        $link = trim($_POST['link']);
+        $title = trim($_POST['title']);
+        $file = $_FILES['cover']['name'];
+        $cover_id = 1;
+
+        //**------  function for handling image upload-------*/
+        upload_image('cover', $cover_id);
+        $sql = "INSERT INTO `projects` (`id`, `title`, `github`, `link`, `profile`) VALUES (NULL, ?, ?, ?, ?)";
+        $stmt = $pdo->prepare($sql);
+        $result = $stmt->execute([$title, $github, $link, $cover_id]);
+        if($result){
+            set_message('success','project created successfully');
+            
+          } else {
+            set_message('error','try again later');
+            
+          }
+        } catch (PDOException $e) {
+            set_message('error','query failed');
+            
+            echo 'query failed' . $e->getMessage();
+        }
+    }
+}
 
 
 
