@@ -76,9 +76,9 @@
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="index.php?manage_projects">
+                                            <a href="index.php?manage_cv">
                                                 <i class="metismenu-icon">
-                                                </i>Manage projects
+                                                </i>Manage all Curriculum
                                             </a>
                                         </li>
                                     </ul>

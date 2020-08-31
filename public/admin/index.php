@@ -45,6 +45,9 @@ include(TEMPLATE_BACK . DS . "head.php");
         if(isset($_GET['create_cv'])){
             include(TEMPLATE_BACK . DS . "curriculum/create_cv.php");
         }
+        if(isset($_GET['manage_cv'])){
+            include(TEMPLATE_BACK . DS . "curriculum/manage_cv.php");
+        }
 
 
 ?>
