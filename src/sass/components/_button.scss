@@ -1,173 +1,4 @@
-@media (min-width: 1200px){
-    .error{
-        &__left{
-            a{
-                display: block;
-                padding: 24px 32px;
-                background-color: $primary;
-                border: 1px solid $primary;
-                border-radius: 8px;
-                text-transform: uppercase;
-                font-weight: 700;
-                color: #1F2235;
-                margin-left: auto;
-                margin-right: auto;
-                width: 24%;
-                transition: 0.8s;
-            }
-            a:hover{
-                border: 1px solid $primary;
-                color: $primary;
-                background-color: transparent;
-            }
-        }
-    }
-
-    .contact{
-        form{
-            #send{
-                grid-area: 4/1;
-                width: 32%;
-                text-transform: uppercase;
-                color: $primary;
-                border: 1px solid $primary;
-                cursor: pointer;
-                font-size: 18px;
-                transition: 0.6s;
-
-            }
-            #send:hover{
-                border: 1px solid $primary;
-                background-color: $primary;
-                color:#313552;
-                font-weight: 700;
-
-            }
-        }
-
-
-    }
-
-    .aboutMe{
-        &__aboutBtn,&__serviceBtn,&__skillsBtn{
-            padding: 24px;
-            text-transform: uppercase;
-            font-size: 24px;
-            color: #CACBD2;
-            border: 1px solid #CACBD2;
-            background-color: #2A2C47;
-            cursor: pointer;
-            transition: 0.5s;
-        }
-        &__aboutBtn:hover,&__serviceBtn:hover,&__skillsBtn:hover{
-            border: 1px solid $primary;
-            background-color: $primary;
-            color: #2A2C47;
-        }
-    }
-    .Download--cv{
-        padding: 16px 32px;
-        font-size: 16px;
-        font-weight: 600;
-        color: #2A2C47;
-        border: 1px solid $primary;
-        background-color: $primary;
-        cursor: pointer;
-        transition: 0.5s;
-    }
-    .Download--cv:hover{
-        color: $primary;
-        border: 1px solid $primary;
-        background-color:  transparent;
-    }
-
-    .projects{
-        &__more{
-            display: block;
-            padding: 16px 32px;
-            font-size: 16px;
-            font-weight: 600;
-            text-transform: uppercase;
-            text-align: center;
-            color: $primary;
-            border: 1px solid $primary;
-            background-color: transparent;
-            cursor: pointer;
-            transition: 0.5s;
-            margin-left: auto;
-            margin-right: auto;
-            width: 10%;
-        }
-        &__more:hover{
-            color: #2A2C47;
-            border: 1px solid $primary;
-            background-color:  $primary;
-        }
-        &__website{
-            cursor: pointer;
-            color: $primary;
-            background-color: transparent;
-            border: 1px solid $primary;
-            padding: 16px 32px;
-            text-transform: uppercase;
-            transition: 0.5s;
-        }
-        &__website:hover{
-            border: 1px solid $primary;
-            background-color: $primary;
-            color: #313552 ;
-            // font-weight: 700;
-        }
-    }
-
-    .projects-page{
-        &__website{
-            cursor: pointer;
-            color: $primary;
-            background-color: transparent;
-            border: 1px solid $primary;
-            padding: 16px 32px;
-            text-transform: uppercase;
-            transition: 0.5s;
-        }
-        &__website:hover{
-            border: 1px solid $primary;
-            background-color: $primary;
-            color: #313552 ;
-            // font-weight: 700;
-        }
-    }
-
-    .footer{
-        &__top{
-            a{
-                padding: 16px;
-                text-transform: uppercase;
-                font-size: 16px;
-                text-align: center;
-                color: $primary;
-                border: 1px solid $primary;
-                background-color: transparent;
-                cursor: pointer;
-                transition: 0.5s;
-                width: 40%;
-                margin: auto 0px auto auto;
-    
-            }
-            a:hover{
-                font-weight: 600;
-                color: #313552;
-                border: 1px solid $primary;
-                background-color: $primary;
-            }
-        }
-    }
-
-
-
-}
-
-@media (min-width: 320px) and (max-width: 599px){
+@media (min-width: 0px) and (max-width: 599px){
     .error{
         &__left{
             a{
@@ -670,6 +501,344 @@
             }
         }
     }
+
+
+}
+
+@media (min-width: 1200px) and (max-width: 1440px){
+    .error{
+        &__left{
+            a{
+                display: block;
+                padding: 24px 32px;
+                background-color: $primary;
+                border: 1px solid $primary;
+                border-radius: 8px;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: #1F2235;
+                margin-left: auto;
+                margin-right: auto;
+                width: 24%;
+                transition: 0.8s;
+            }
+            a:hover{
+                border: 1px solid $primary;
+                color: $primary;
+                background-color: transparent;
+            }
+        }
+    }
+
+    .contact{
+        form{
+            #send{
+                grid-area: 4/1;
+                width: 48%;
+                text-transform: uppercase;
+                color: $primary;
+                border: 1px solid $primary;
+                cursor: pointer;
+                font-size: 18px;
+                transition: 0.6s;
+
+            }
+            #send:hover{
+                border: 1px solid $primary;
+                background-color: $primary;
+                color:#313552;
+                font-weight: 700;
+
+            }
+        }
+
+
+    }
+
+    .aboutMe{
+        &__aboutBtn,&__serviceBtn,&__skillsBtn{
+            padding: 24px;
+            text-transform: uppercase;
+            font-size: 24px;
+            color: #CACBD2;
+            border: 1px solid #CACBD2;
+            background-color: #2A2C47;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        &__aboutBtn:hover,&__serviceBtn:hover,&__skillsBtn:hover{
+            border: 1px solid $primary;
+            background-color: $primary;
+            color: #2A2C47;
+        }
+    }
+    .Download--cv{
+        padding: 16px 32px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #2A2C47;
+        border: 1px solid $primary;
+        background-color: $primary;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .Download--cv:hover{
+        color: $primary;
+        border: 1px solid $primary;
+        background-color:  transparent;
+    }
+
+    .projects{
+        &__more{
+            display: block;
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            color: $primary;
+            border: 1px solid $primary;
+            background-color: transparent;
+            cursor: pointer;
+            transition: 0.5s;
+            margin-left: auto;
+            margin-right: auto;
+            width: 24%;
+        }
+        &__more:hover{
+            color: #2A2C47;
+            border: 1px solid $primary;
+            background-color:  $primary;
+        }
+        &__website{
+            cursor: pointer;
+            color: $primary;
+            background-color: transparent;
+            border: 1px solid $primary;
+            padding: 16px 32px;
+            text-transform: uppercase;
+            transition: 0.5s;
+        }
+        &__website:hover{
+            border: 1px solid $primary;
+            background-color: $primary;
+            color: #313552 ;
+            // font-weight: 700;
+        }
+    }
+
+    .projects-page{
+        &__website{
+            cursor: pointer;
+            color: $primary;
+            background-color: transparent;
+            border: 1px solid $primary;
+            padding: 16px 32px;
+            text-transform: uppercase;
+            transition: 0.5s;
+        }
+        &__website:hover{
+            border: 1px solid $primary;
+            background-color: $primary;
+            color: #313552 ;
+            // font-weight: 700;
+        }
+    }
+
+    .footer{
+        &__top{
+            a{
+                padding: 16px;
+                text-transform: uppercase;
+                font-size: 16px;
+                text-align: center;
+                color: $primary;
+                border: 1px solid $primary;
+                background-color: transparent;
+                cursor: pointer;
+                transition: 0.5s;
+                width: 40%;
+                margin: auto 0px auto auto;
+    
+            }
+            a:hover{
+                font-weight: 600;
+                color: #313552;
+                border: 1px solid $primary;
+                background-color: $primary;
+            }
+        }
+    }
+
+
+
+}
+
+@media (min-width: 1441px){
+    .error{
+        &__left{
+            a{
+                display: block;
+                padding: 24px 32px;
+                background-color: $primary;
+                border: 1px solid $primary;
+                border-radius: 8px;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: #1F2235;
+                margin-left: auto;
+                margin-right: auto;
+                width: 24%;
+                transition: 0.8s;
+            }
+            a:hover{
+                border: 1px solid $primary;
+                color: $primary;
+                background-color: transparent;
+            }
+        }
+    }
+
+    .contact{
+        form{
+            #send{
+                grid-area: 4/1;
+                width: 32%;
+                text-transform: uppercase;
+                color: $primary;
+                border: 1px solid $primary;
+                cursor: pointer;
+                font-size: 18px;
+                transition: 0.6s;
+
+            }
+            #send:hover{
+                border: 1px solid $primary;
+                background-color: $primary;
+                color:#313552;
+                font-weight: 700;
+
+            }
+        }
+
+
+    }
+
+    .aboutMe{
+        &__aboutBtn,&__serviceBtn,&__skillsBtn{
+            padding: 24px;
+            text-transform: uppercase;
+            font-size: 24px;
+            color: #CACBD2;
+            border: 1px solid #CACBD2;
+            background-color: #2A2C47;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+        &__aboutBtn:hover,&__serviceBtn:hover,&__skillsBtn:hover{
+            border: 1px solid $primary;
+            background-color: $primary;
+            color: #2A2C47;
+        }
+    }
+    .Download--cv{
+        padding: 16px 32px;
+        font-size: 16px;
+        font-weight: 600;
+        color: #2A2C47;
+        border: 1px solid $primary;
+        background-color: $primary;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+    .Download--cv:hover{
+        color: $primary;
+        border: 1px solid $primary;
+        background-color:  transparent;
+    }
+
+    .projects{
+        &__more{
+            display: block;
+            padding: 16px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+            color: $primary;
+            border: 1px solid $primary;
+            background-color: transparent;
+            cursor: pointer;
+            transition: 0.5s;
+            margin-left: auto;
+            margin-right: auto;
+            width: 10%;
+        }
+        &__more:hover{
+            color: #2A2C47;
+            border: 1px solid $primary;
+            background-color:  $primary;
+        }
+        &__website{
+            cursor: pointer;
+            color: $primary;
+            background-color: transparent;
+            border: 1px solid $primary;
+            padding: 16px 32px;
+            text-transform: uppercase;
+            transition: 0.5s;
+        }
+        &__website:hover{
+            border: 1px solid $primary;
+            background-color: $primary;
+            color: #313552 ;
+            // font-weight: 700;
+        }
+    }
+
+    .projects-page{
+        &__website{
+            cursor: pointer;
+            color: $primary;
+            background-color: transparent;
+            border: 1px solid $primary;
+            padding: 16px 32px;
+            text-transform: uppercase;
+            transition: 0.5s;
+        }
+        &__website:hover{
+            border: 1px solid $primary;
+            background-color: $primary;
+            color: #313552 ;
+            // font-weight: 700;
+        }
+    }
+
+    .footer{
+        &__top{
+            a{
+                padding: 16px;
+                text-transform: uppercase;
+                font-size: 16px;
+                text-align: center;
+                color: $primary;
+                border: 1px solid $primary;
+                background-color: transparent;
+                cursor: pointer;
+                transition: 0.5s;
+                width: 40%;
+                margin: auto 0px auto auto;
+    
+            }
+            a:hover{
+                font-weight: 600;
+                color: #313552;
+                border: 1px solid $primary;
+                background-color: $primary;
+            }
+        }
+    }
+
 
 
 }
