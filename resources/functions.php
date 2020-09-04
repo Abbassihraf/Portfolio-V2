@@ -1,4 +1,9 @@
 <?php 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+
+
+
 //Helper Functions
 
 function redirect($location)
@@ -182,7 +187,43 @@ function upload_file($name, &$cover_id)
     }
 }
 
+//function for sending emails
+function send_email($message, $email){
+    $mail = new PHPMailer(true);
+    try {
+        $mail->isSMTP();
+        $mail->Host = 'smtp.googlemail.com';  //gmail SMTP server
+        $mail->SMTPAuth = true;
+        $mail->Username = '';   //username
+        $mail->Password = 'Achraf0813@';   //password
+        $mail->SMTPSecure = 'ssl';
+        $mail->Port = 465;                    //smtp port
 
+         
+
+        // HTML Message Ends here
+
+        $mail->setFrom('', 'password reset');
+        $mail->addAddress($email, 'password reset');
+     
+     
+        $mail->isHTML(true);
+        $mail->Subject = "Forgot password portfolio-V2";
+        $mail->Body    = $message;
+     
+        
+        
+        if($mail->send()){
+        // Message if mail has been sent
+        echo "<script>toastr.success('password reset link has been sent', 'success');</script>";
+        }else{
+            // Message if mail has been not sent
+            echo "<script>toastr.error('Try again later', 'Error');</script>";       
+        }
+    } catch (Exception $e) {
+        echo 'Message could not be sent. Mailer Error: '. $mail->ErrorInfo;
+    }
+}
 
 require_once('component/loginComponent.php');
 require_once('component/testimonialsComponent.php');

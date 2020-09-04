@@ -12,6 +12,13 @@
     </div>
 </header>
 
+
+<?php send_mail_php() ?>
+
+<p class="contactForm__alertmsg alertMsg"><?php if(isset($send)) echo $send; ?></p>
+<p class="contactForm__alertmsg alertMsg"><?php if(isset($notsent)) echo $notsent; ?></p>
+
+
 <section class="contact">
     <div class="contact__container">
             <h1 class="contact__title">contact me</h1>
@@ -19,12 +26,20 @@
             <h4 class="contact__para">Fill this out so we can learn more about your needs.</h4>
 
             <form action="">
-                <input type="text" id="fname" name="fullname" placeholder="Full name" required>
+                <input type="text" id="fname" name="name" placeholder="Full name" required>
+                <p class="contactForm__alertmsg"><?php if(isset($name_error)) echo $name_error; ?></p>
+
                 <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                <p class="contactForm__alertmsg"><?php if(isset($subject_error)) echo $subject_error; ?></p>
+
                 <input type="email" id="email" name="email" placeholder="Email Address" required>
-                <input type="tel" id="phone" name="phone" placeholder="Phone number">
-                <textarea id="message" name="message" placeholder="Message" required></textarea>
-                <input id="send" type="submit" value="send">
+                <p class="contactForm__alertmsg"><?php if(isset($email_error)) echo $email_error; ?></p>
+
+ 
+
+                <textarea id="message" name="comments" placeholder="Message" required></textarea>
+                <p class="contactForm__alertmsg"><?php if(isset($message_error)) echo $message_error; ?></p>
+                <input name="submit" id="send" type="submit" value="send">
 
             </form>
     </div>
