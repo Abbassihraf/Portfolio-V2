@@ -65,7 +65,6 @@ submit_testimonials();
                                         <!-- MAX_FILE_SIZE must precede the file input field -->
                                 <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
                                 <input name="profile" id="exampleFile" type="file" class="form-control-file">
-                                <big class="form-text text-muted">&#9888; The dimensions must be 200 x 80 px</big>
                             </div>
                         </div>
                         <input class="btn btn-primary" id="submit_testimonials" type="submit" name="submit" value="Submit form">

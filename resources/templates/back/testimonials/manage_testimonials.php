@@ -27,7 +27,6 @@
                                 <th>Name</th>
                                 <th>Last Name</th>
                                 <th>Role</th>
-                                <th>Content</th>
                             </tr>
                         </thead>
                         <tbody>

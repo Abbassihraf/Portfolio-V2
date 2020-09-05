@@ -4,7 +4,7 @@
 function display_testimonials(){
     global $pdo;
     try{
-    $sql ="SELECT t.*, m.file_location FROM testimonials t join media m on t.profile = m.id ORDER BY t.id ASC";
+    $sql ="SELECT t.*, m.file_location FROM testimonials t join media m on t.profile = m.id ORDER BY t.id DESC";
     $stmt = $pdo->query($sql)->fetchAll();
     foreach ($stmt as $testimonials){
         echo <<<testimonials
@@ -67,7 +67,7 @@ function display_testimonials_admin()
 {
     global $pdo;
     try{
-        $sql = "SELECT t.*, m.file_name FROM testimonials t join media m on t.profile = m.id "; 
+        $sql = "SELECT t.*, m.file_name FROM testimonials t join media m on t.profile = m.id ORDER BY t.id DESC"; 
         $stmt = $pdo->query($sql)->fetchAll();
         foreach ($stmt as $testimonials){
         echo <<<testimonials
@@ -77,7 +77,6 @@ function display_testimonials_admin()
         <td class=""> {$testimonials->name} </td>
         <td class=""> {$testimonials->last_name} </td>
         <td class=""> {$testimonials->role} </td>
-        <td class=""> {$testimonials->content} </td>
 
         <td class="text-center">
             <a href="index.php?edit_testimonials={$testimonials->id}">
