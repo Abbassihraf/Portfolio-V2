@@ -1,89 +1,4 @@
-@media (min-width: 1200px) {
-    // .cardT2{
-    //     margin-left: auto;
-    // }
-    .testimonials {
-        padding: 4rem 16rem;
-        padding-bottom: 80px;
-        background-color: #23263D;
-        &__title {
-            color: $primary;
-            font-size: 16px;
-            font-weight: 400;
-            text-transform: uppercase;
-            margin-bottom: 8px;
-        }
-        &__subtitle {
-            color: white;
-            font-size: 40px;
-            font-family: $fontS;
-            text-transform: capitalize;
-        }
-        &__wrapper{
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: max-content;
-            margin-top: 56px;
-        }
-        &__card{
-            width: 96%;
-            padding: 48px;
-            background-color: #2C304A;
-            border: 1px solid $primary;
-            border-radius: 16px;
-            margin-right: 24px;
-            &--top{
-                display: grid;
-                grid-template-columns: 20% 70% 10%;
-                grid-template-rows: max-content max-content;
-                h1{
-                    color: white;
-                    text-transform: capitalize;
-                    margin: auto auto auto 0px;
-                    font-family: $fontS;
-                    font-weight: 400;
-                    font-size: 24px;
-                    span{
-                        font-family: $fontS;
-                        text-transform: uppercase;
-                    }
-                }
-                h2{
-                    color: $primary;
-                    font-weight: 400;
-                    font-size: 18px;
-                    text-transform: capitalize;
-                }
-                .quote{
-                    grid-row: 1/3;
-                    grid-column: 3/4;
-                    margin: auto;
-                }
-            }
-            &--bottom{
-                margin-top: 32px;
-                p{
-                    color: white;
-                    font-size: 18px;
-                    line-height: 1.4em;
-                    text-align: justify;
-                    font-weight: 300;
-                    font-family: $fontS;
-                }
-            }
-        }
-        &__avatar{
-            width: 96px;
-            height: 96px;
-            border-radius: 100%;
-            margin: auto auto auto 0px;
-            grid-row: 1/3;
-            grid-column: 1/2;
-        }
-    }
-}
-
-@media (min-width: 320px) and (max-width: 599px){
+@media (min-width: 0px) and (max-width: 599px){
     // .cardT2{
     //     margin-left: auto;
     // }
@@ -118,12 +33,12 @@
         }
         &__card{
             width: 99%;
-            height: 480px;
+            height: 488px;
             padding: 32px 16px;
             background-color: #2C304A;
             border: 1px solid $primary;
             border-radius: 16px;
-            margin-right: 24px;
+            margin: auto;
             &--top{
                 display: grid;
                 grid-template-columns: 100%;
@@ -157,7 +72,7 @@
                 }
             }
             &--bottom{
-                margin-top: 32px;
+                margin-top: 48px;
                 p{
                     color: white;
                     font-size: 18px;
@@ -165,7 +80,6 @@
                     text-align: justify;
                     text-align-last: center;
                     font-weight: 300;
-                    font-family: $fontS;
                 }
             }
         }
@@ -213,12 +127,12 @@
         }
         &__card{
             width: 99%;
-            height: 408px;
+            height: 424px;
             padding: 32px;
             background-color: #2C304A;
             border: 1px solid $primary;
             border-radius: 16px;
-            margin-right: 24px;
+            margin: auto;
             &--top{
                 display: grid;
                 grid-template-columns: 100%;
@@ -252,7 +166,7 @@
                 }
             }
             &--bottom{
-                margin-top: 32px;
+                margin-top: 48px;
                 p{
                     color: white;
                     font-size: 18px;
@@ -260,7 +174,6 @@
                     text-align: justify;
                     text-align-last: center;
                     font-weight: 300;
-                    font-family: $fontS;
                 }
             }
         }
@@ -309,12 +222,12 @@
         }
         &__card{
             width: 99%;
-            height: 456px;
+            height: 472px;
             padding: 32px;
             background-color: #2C304A;
             border: 1px solid $primary;
             border-radius: 16px;
-            margin-right: 24px;
+            margin: auto;
             &--top{
                 display: grid;
                 grid-template-columns: 100%;
@@ -348,7 +261,7 @@
                 }
             }
             &--bottom{
-                margin-top: 32px;
+                margin-top: 48px;
                 p{
                     color: white;
                     font-size: 18px;
@@ -356,7 +269,6 @@
                     text-align: justify;
                     text-align-last: center;
                     font-weight: 300;
-                    font-family: $fontS;
                 }
             }
         }
@@ -370,3 +282,180 @@
         }
     }
 }
+
+@media (min-width: 1200px) and (max-width: 1440px){
+    // .cardT2{
+    //     margin-left: auto;
+    // }
+    .testimonials {
+        padding: 4rem 16rem;
+        padding-bottom: 80px;
+        background-color: #23263D;
+        &__title {
+            color: $primary;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        &__subtitle {
+            color: white;
+            font-size: 40px;
+            font-family: $fontS;
+            text-transform: capitalize;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: max-content;
+            margin-top: 56px;
+        }
+        &__card{
+            width: 96%;
+            height: 408px;
+            padding: 48px;
+            background-color: #2C304A;
+            border: 1px solid $primary;
+            border-radius: 16px;
+            margin: auto;
+            &--top{
+                display: grid;
+                grid-template-columns: 20% 70% 10%;
+                grid-template-rows: max-content max-content;
+                h1{
+                    color: white;
+                    text-transform: capitalize;
+                    margin: auto;
+                    font-family: $fontS;
+                    font-weight: 400;
+                    font-size: 24px;
+                    span{
+                        font-family: $fontS;
+                        text-transform: uppercase;
+                    }
+                }
+                h2{
+                    color: $primary;
+                    font-weight: 400;
+                    font-size: 16px;
+                    text-transform: capitalize;
+                    margin: auto;
+                    text-align: center;
+                }
+                .quote{
+                    grid-row: 1/3;
+                    grid-column: 3/4;
+                    margin: auto;
+                    width: 100%;
+                }
+            }
+            &--bottom{
+                margin-top: 48px;
+                p{
+                    color: white;
+                    font-size: 18px;
+                    line-height: 1.4em;
+                    text-align: justify;
+                    text-align-last: center;
+                    font-weight: 300;
+                }
+            }
+        }
+        &__avatar{
+            width: 72px;
+            height: 72px;
+            border-radius: 100%;
+            margin: auto auto auto 0px;
+            grid-row: 1/3;
+            grid-column: 1/2;
+        }
+    }
+}
+
+@media (min-width: 1441px) {
+    // .cardT2{
+    //     margin-left: auto;
+    // }
+    .testimonials {
+        padding: 4rem 16rem;
+        padding-bottom: 80px;
+        background-color: #23263D;
+        &__title {
+            color: $primary;
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+        }
+        &__subtitle {
+            color: white;
+            font-size: 40px;
+            font-family: $fontS;
+            text-transform: capitalize;
+        }
+        &__wrapper{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: max-content;
+            margin-top: 56px;
+        }
+        &__card{
+            width: 96%;
+            height: 348px;
+            padding: 48px;
+            background-color: #2C304A;
+            border: 1px solid $primary;
+            border-radius: 16px;
+            margin: auto;
+            &--top{
+                display: grid;
+                grid-template-columns: 20% 70% 10%;
+                grid-template-rows: max-content max-content;
+                h1{
+                    color: white;
+                    text-transform: capitalize;
+                    margin: auto auto auto 0px;
+                    font-family: $fontS;
+                    font-weight: 400;
+                    font-size: 24px;
+                    span{
+                        font-family: $fontS;
+                        text-transform: uppercase;
+                    }
+                }
+                h2{
+                    color: $primary;
+                    font-weight: 400;
+                    font-size: 18px;
+                    text-transform: capitalize;
+                }
+                .quote{
+                    grid-row: 1/3;
+                    grid-column: 3/4;
+                    margin: auto;
+                }
+            }
+            &--bottom{
+                margin-top: 48px;
+                p{
+                    color: white;
+                    font-size: 18px;
+                    line-height: 1.4em;
+                    text-align: justify;
+                    text-align-last: center;
+                    font-weight: 300;
+                }
+            }
+        }
+        &__avatar{
+            width: 96px;
+            height: 96px;
+            border-radius: 100%;
+            margin: auto auto auto 0px;
+            grid-row: 1/3;
+            grid-column: 1/2;
+        }
+    }
+}
+
+
