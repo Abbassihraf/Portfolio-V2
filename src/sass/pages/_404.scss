@@ -1,0 +1,210 @@
+@media (min-width: 1200px){
+
+.error{
+    background-image: url("../images/error-bg.png");
+    height: 1008px;
+    padding: 0rem 16rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    &__container{
+        padding: 20% 0px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: max-content;
+    }
+    &__left{
+        grid-area: 1/1;
+        margin-left: auto;
+        margin-right: auto;
+        h1{
+            font-family: $fontS;
+            color: white;
+            font-size: 144px;
+            text-transform: capitalize;
+            text-align: center;
+        }
+        h2{
+            color: white;
+            font-family: $fontS;
+            text-transform: capitalize;
+            text-align: center;
+            font-size: 56px;
+            width: 72%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 64px;
+        }
+    }
+    &__right{
+        grid-area: 1/2;
+        margin: auto;
+        display: block;
+    }
+}
+}
+
+@media (min-width: 0px) and (max-width: 599px){
+
+    .error{
+        background-image: url("../images/error-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        &__container{
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20% 0px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content;
+        }
+        &__left{
+            grid-area: 1/1;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 64px;
+            h1{
+                font-family: $fontS;
+                color: white;
+                font-size: 96px;
+                text-transform: capitalize;
+                text-align: center;
+            }
+            h2{
+                color: white;
+                font-family: $fontS;
+                text-transform: capitalize;
+                text-align: center;
+                font-size: 32px;
+                width: 72%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 40px;
+            }
+        }
+        &__right{
+            grid-area: 2/1;
+            margin: auto;
+            display: block;
+            img{
+                display: block;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 600px)and (max-width: 1023px){
+
+    .error{
+        background-image: url("../images/error-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        &__container{
+            width: 88%;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 20% 0px;
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: max-content max-content;
+        }
+        &__left{
+            grid-area: 1/1;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 64px;
+            h1{
+                font-family: $fontS;
+                color: white;
+                font-size: 96px;
+                text-transform: capitalize;
+                text-align: center;
+            }
+            h2{
+                color: white;
+                font-family: $fontS;
+                text-transform: capitalize;
+                text-align: center;
+                font-size: 32px;
+                width: 72%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 40px;
+            }
+        }
+        &__right{
+            grid-area: 2/1;
+            margin: auto;
+            display: block;
+            img{
+                display: block;
+                width: 80%;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+
+@media (min-width: 1024px)and (max-width: 1199px){
+
+    .error{
+        background-image: url("../images/error-bg.png");
+        background-size: cover;
+        height: 1000px;
+        background-repeat: no-repeat;
+        overflow-y: hidden;
+        overflow-x: hidden;
+        &__container{
+            width: 88%;
+            padding: 20% 0px;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: max-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__left{
+            grid-area: 1/1;
+            margin-left: auto;
+            margin-right: auto;
+            h1{
+                font-family: $fontS;
+                color: white;
+                font-size: 96px;
+                text-transform: capitalize;
+                text-align: center;
+            }
+            h2{
+                color: white;
+                font-family: $fontS;
+                text-transform: capitalize;
+                text-align: center;
+                font-size: 40px;
+                width: 72%;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 64px;
+            }
+        }
+        &__right{
+            grid-area: 1/2;
+            margin: auto;
+            display: block;
+            img{
+                width: 96%;
+                margin: auto;
+                display: block;
+            }
+        }
+    }
+}
